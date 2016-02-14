@@ -1,0 +1,79 @@
+# Open Gazettes Components
+
+## Atoms
+- colors
+- icons
+- logo
+- tagline
+- h1
+- h2
+- h3
+
+## Molecules
+
+### General
+- button small
+- button large
+
+### Top Nav 
+- small search
+- top-nav buttons
+- small logo
+
+### Page Sections
+- big search
+- company info - source
+- gazette category - big
+- call-to-action-text
+
+### flags
+- flag rounded
+- flag big
+- flag small
+
+### Filters
+- form element - checkbox
+- form element - range
+- form element - input
+- form element - title
+
+### Results
+- filter tag
+- gazette category - small
+- pagination
+
+### Slider
+- slider - arrows
+- slider - circles
+- slider-slide
+- slider-panels
+
+
+
+
+## Organisms
+
+- Top-Nav Simple
+- Top-Nav Composite
+- Footer
+- Below Footer
+- Homepage Flags
+- Call to Action Section
+
+- Company Info Section
+- Gazette Info Section
+
+- slider
+
+- Gazette Info Box
+- Gazette Info list-item
+
+- filter form panel
+
+- use-case pannel (left and right)
+
+## Pages
+### Index
+### Result List
+### Gazette Page
+### Use Cases
