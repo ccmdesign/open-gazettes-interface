@@ -31,14 +31,19 @@ gulp.task('sass', function() {
     }))
 });
 
-// Image Optimizer
-gulp.task('images', function(){
-  return gulp.src('source/static/images/**/*.+(png|jpg|jpeg|gif|svg)')
-  // Caching images that ran through imagemin
-  .pipe(cache(imagemin({
-      interlaced: true
-    })))
-  .pipe(gulp.dest('dist/images'))
+gulp.task('vendor', function(){
+  return gulp.src('source/static/vendor/**/*')
+  .pipe(gulp.dest('public/vendor'))
+});
+
+gulp.task('image-dev', function(){
+  return gulp.src('source/static/images/**/*')
+  .pipe(gulp.dest('public/images'))
+});
+
+gulp.task('js-dev', function(){
+  return gulp.src('source/static/*.js')
+  .pipe(gulp.dest('public'))
 });
 
 // Nunjucks
@@ -61,7 +66,7 @@ gulp.task('nunjucks', function() {
 });
 
 
-gulp.task('watch', ['browserSync', 'sass', 'nunjucks'], function (){
+gulp.task('watch', ['browserSync', 'sass', 'nunjucks', 'image-dev', 'vendor', 'js-dev'], function (){
   gulp.watch('source/sass/**/*.scss', ['sass']); 
   gulp.watch('source/templates/**/*.html', ['nunjucks']); 
   // Other watchers
