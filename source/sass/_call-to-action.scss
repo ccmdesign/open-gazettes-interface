@@ -1,0 +1,15 @@
+// Call to Action
+.call-to-action-section {
+    background-color: $teal;
+    padding: 40px 0;
+    color: $white;
+    font-size: 1rem;
+
+    p {
+        margin: 0;
+    }
+
+    .call-to-action-section__button {
+        text-align: right;
+    }
+}

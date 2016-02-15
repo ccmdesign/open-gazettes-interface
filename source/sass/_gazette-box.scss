@@ -1,8 +1,8 @@
 // Gazette Box
 
 .gazette-box {
-    background-color: $white-10;
-    color: $white-80;
+    background-color: rgba($white, .1);
+    color: rgba($white, .8);
     margin: 15px 0;
 
     h2 {
@@ -21,7 +21,7 @@
 }
 
 .gazette-box__controls {
-    background-color: $white-10;
+    background-color: rgba($white, .1);
     font-size: .9rem;
     margin-top: 30px;
 }
@@ -32,7 +32,7 @@
     padding: 2px 8px 1px;
     background-color: $red;
     border-radius: 2px;
-    color: $white-90;
+    color: rgba($white, .9);
     font-weight: 400;
     font-size: .8rem;
     text-transform: uppercase;
@@ -42,7 +42,7 @@
     float: right;
     margin: 5px 5px 5px 20px;
     font-style: italic;
-    color: $white-40;
+    color: rgba($white, .4);
 }
 
 .gazette-box__flag {

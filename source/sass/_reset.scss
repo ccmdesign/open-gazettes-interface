@@ -10,3 +10,15 @@ body {
     font-family: $signika;
     font-weight: 300;
 }
+
+a {
+    color: $teal;
+}
+
+a:hover {
+    color: $orange;
+}
+
+a:visited {
+    color: $dark-blue;
+}

@@ -29,10 +29,12 @@
     display: inline-block;
     text-decoration: none;
     border: 0;
-    color: $white-90;
+    color: rgba($teal, .8);
+    transition: all 0.3s ease;
 
     &:hover { 
-        background-color: $gray-20;
+        background-color: darken($teal, 5);
+        transition: all 0.3s ease;
     }
 }
 

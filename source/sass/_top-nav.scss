@@ -5,4 +5,9 @@
 
 .top-nav__item {
     @extend .u-button;
+    color: rgba($white, .8);
+
+    &:visited {
+        color: rgba($white, .8);
+    }
 }

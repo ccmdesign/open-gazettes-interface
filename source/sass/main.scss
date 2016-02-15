@@ -1,54 +1,31 @@
-$teal: rgba(24,112,126,1);
-$dark-blue: rgba(33,60,79,1);
-$orange: rgba(245,152,33,1);
-$red: rgba(185,0,0,1);
+// Colors
 
-$black: #333;
-$gray-80: rgba(0,0,0,0.8);
-$gray-70: rgba(0,0,0,0.7);
-$gray-60: rgba(0,0,0,0.6);
-$gray-50: rgba(0,0,0,0.5);
-$gray-40: rgba(0,0,0,0.4);
-$gray-30: rgba(0,0,0,0.3);
-$gray-20: rgba(0,0,0,0.2);
-$gray-10: rgba(0,0,0,0.1);
-$gray-05: rgba(0,0,0,0.05);
-$gray-03: rgba(0,0,0,0.03);
+$teal: hsla(188deg,68%,29%, 1);
+$dark-blue: hsla(205deg,41%,22%, 1);
+$orange: hsla(34deg,91%,55%, 1);
+$red: hsla(0deg, 100%, 36%, 1);
 
-$white: rgba(255,255,255,1);
-$white-90: rgba(255,255,255,0.9);
-$white-80: rgba(255,255,255,0.8);
-$white-70: rgba(255,255,255,0.7);
-$white-60: rgba(255,255,255,0.6);
-$white-50: rgba(255,255,255,0.5);
-$white-40: rgba(255,255,255,0.4);
-$white-30: rgba(255,255,255,0.3);
-$white-20: rgba(255,255,255,0.2);
-$white-10: rgba(255,255,255,0.1);
+$black: hsla(0deg, 0%, 0%, 1);
+$white: hsla(360deg, 100%, 100%, 1);
 
-$teal-90: rgba(24,112,126,0.9);
-$teal-80: rgba(24,112,126,0.8);
-$teal-70: rgba(24,112,126,0.7);
-$teal-60: rgba(24,112,126,0.6);
-$teal-50: rgba(24,112,126,0.5);
-$teal-40: rgba(24,112,126,0.4);
-$teal-30: rgba(24,112,126,0.3);
-$teal-20: rgba(24,112,126,0.2);
-$teal-10: rgba(24,112,126,0.1);
 
+// Fonts
 
 $signika-negative: 'Signika Negative', sans-serif;
 $signika: 'Signika', sans-serif;
 
 
-
+// Imports
 
 @import "reset";
 @import "utilities";
 @import "page-section";
+@import "call-to-action";
+@import "buttons";
 @import "footer";
 @import "top-nav";
 @import "search";
 @import "flags";
 @import "gazette-box";
+@import "use-cases";
 @import "sandbox";
