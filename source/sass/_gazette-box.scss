@@ -26,7 +26,7 @@
     margin-top: 30px;
 }
 
-.gazette-box__category {
+.gazette-box__category { // NOTE: This might be redundant with the gazette-category
     margin: 5px 5px 5px 20px;
     display: inline-block;
     padding: 2px 8px 1px;
@@ -36,6 +36,7 @@
     font-weight: 400;
     font-size: .8rem;
     text-transform: uppercase;
+
 }
 
 .gazette-box__pub-date {

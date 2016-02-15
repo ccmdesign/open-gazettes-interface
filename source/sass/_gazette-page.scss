@@ -1,0 +1,59 @@
+.gazette-header {
+    margin-top: 40px;
+}
+
+.gazette-header__panel-right {
+    text-align: right;
+}
+
+.gazette-header__title {
+    font-weight: 300;
+    margin-top: 0;
+}
+
+.gazette-header__flag {
+    width: 90px;
+    box-shadow: 0 0 6px rgba($black, .2);
+}
+
+.gazette-header__pub-date {
+    font-style: italic;
+    color: rgba($black, .5);
+}
+
+.gazette-category { // NOTE: This might be redundant with the gazette-box__category
+    background-color: $red;
+    display: inline-block;
+    padding: 6px 18px;
+    font-weight: 400;
+    color: rgba($white, .9);
+    border-radius: 2px;
+}
+
+.gazette-actions {
+    padding: 0;
+
+    li {
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+}
+
+.gazette-actions__item {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.gazette-info {
+    p {
+        margin-top: .3rem;
+    }
+}
+
+.gazette-info__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+

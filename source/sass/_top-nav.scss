@@ -11,3 +11,14 @@
         color: rgba($white, .8);
     }
 }
+
+.top-nav__open-corporates {
+    color: rgba($white, .4);
+    padding: 15px 0;
+    text-align: right;
+
+    img {
+        width: 130px;
+        margin-left: 5px;
+    }
+}

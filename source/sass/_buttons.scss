@@ -63,3 +63,23 @@
         color: rgba($black, .4); 
     }
 }
+
+.button--disabled {
+    pointer-events: none;
+    opacity: .4;
+}
+
+.button {
+    @extend .u-button;
+    font-weight: 400;
+}
+
+.button--red {
+    background-color: $red;
+    color: rgba($white, .9);
+
+    &:hover {
+        color: $white;
+        background-color: darken($red, 10);
+    }
+}
