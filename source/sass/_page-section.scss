@@ -49,6 +49,7 @@
         border-right: 24px solid transparent;
 
         position: absolute;
+        z-index: 1;
         bottom: -24px;
         left: calc(50% - 24px);
     }

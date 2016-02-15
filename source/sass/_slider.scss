@@ -1,0 +1,53 @@
+.slider {
+    margin: 0 auto;
+}
+
+.slider__item {
+
+}
+
+.slider {
+    .slick-arrow {
+        position: absolute;
+        top: 45%;
+        z-index: 1;
+        background-color: transparent;
+        border: 0;
+        color: transparent;
+
+        &:before,
+        &:after {
+            color: rgba($black, .1);
+            @extend .u-material-icons;
+            font-size: 60px !important;
+            transition: all 0.3s ease;
+        }
+
+        &:hover:before,
+        &:hover:after {
+            color: rgba($white, .8);
+            background-color: $teal;
+            
+            transition: all 0.3s ease;
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+        outline: 0;
+
+        &:before {
+            
+            content: 'keyboard_arrow_left'
+        }
+    }
+
+    .slick-next {
+        right: 0;
+        outline: 0;
+
+        &:after {
+            content: 'keyboard_arrow_right'
+        }
+    }
+}
