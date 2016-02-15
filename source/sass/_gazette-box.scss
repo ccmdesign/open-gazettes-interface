@@ -1,0 +1,52 @@
+// Gazette Box
+
+.gazette-box {
+    background-color: $white-10;
+    color: $white-80;
+    margin: 15px 0;
+
+    h2 {
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding: 20px 20px 0 20px;
+        margin: 0;
+        color: $white;
+    }
+
+    p {
+        padding: 0 20px;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+.gazette-box__controls {
+    background-color: $white-10;
+    font-size: .9rem;
+    margin-top: 30px;
+}
+
+.gazette-box__category {
+    margin: 5px 5px 5px 20px;
+    display: inline-block;
+    padding: 2px 8px 1px;
+    background-color: $red;
+    border-radius: 2px;
+    color: $white-90;
+    font-weight: 400;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.gazette-box__pub-date {
+    float: right;
+    margin: 5px 5px 5px 20px;
+    font-style: italic;
+    color: $white-40;
+}
+
+.gazette-box__flag {
+    float: right;
+    margin: 0 0 0 10px;
+    height: 32px;
+}

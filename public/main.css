@@ -1,3 +1,14 @@
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="email"],
+input[type="search"] {
+  border-radius: 0; }
+
+body {
+  font-family: "Signika", sans-serif;
+  font-weight: 300; }
+
 .u-material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -20,8 +31,127 @@
   /* Support for IE. */
   font-feature-settings: 'liga'; }
 
+.u-button, .top-nav__item {
+  padding: 15px 20px;
+  display: inline-block;
+  text-decoration: none;
+  border: 0;
+  color: rgba(255, 255, 255, 0.9); }
+  .u-button:hover, .top-nav__item:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
+
+.u-circle, .flag-item__rounded {
+  border-radius: 50%;
+  overflow: hidden; }
+
+.page-section {
+  padding: 60px 0; }
+
+.page-section__centered-content {
+  max-width: 660px;
+  margin: 0 auto;
+  text-align: center; }
+
+.page-section__title {
+  text-align: center; }
+
+.page-section--dark-blue {
+  background-color: #213c4f;
+  color: white; }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px 0; }
+  .footer h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9); }
+  .footer li {
+    color: rgba(255, 255, 255, 0.9); }
+
 .top-nav {
   background-color: #18707e; }
 
-.footer {
-  background-color: rgba(0, 0, 0, 0.7); }
+.main-search-field form {
+  display: flex; }
+
+.main-search-field input[type="search"] {
+  flex: 1;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  background-color: rgba(24, 112, 126, 0.2);
+  padding: 25px; }
+
+.main-search-field input[type="submit"] {
+  width: 60px;
+  height: 50px;
+  background-color: #18707e;
+  padding: 0;
+  border: 0;
+  color: white;
+  font-size: 1.8rem; }
+
+.flag-group {
+  margin: 0;
+  padding: 0; }
+
+.flag-item {
+  list-style-type: none;
+  display: inline-block;
+  width: 15%; }
+
+.flag-item__rounded {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); }
+
+.flag-item__country-name {
+  color: rgba(0, 0, 0, 0.5); }
+
+.gazette-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  margin: 15px 0; }
+  .gazette-box h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 20px 20px 0 20px;
+    margin: 0;
+    color: white; }
+  .gazette-box p {
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: 300; }
+
+.gazette-box__controls {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: .9rem;
+  margin-top: 30px; }
+
+.gazette-box__category {
+  margin: 5px 5px 5px 20px;
+  display: inline-block;
+  padding: 2px 8px 1px;
+  background-color: #b90000;
+  border-radius: 2px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  font-size: .8rem;
+  text-transform: uppercase; }
+
+.gazette-box__pub-date {
+  float: right;
+  margin: 5px 5px 5px 20px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.4); }
+
+.gazette-box__flag {
+  float: right;
+  margin: 0 0 0 10px;
+  height: 32px; }

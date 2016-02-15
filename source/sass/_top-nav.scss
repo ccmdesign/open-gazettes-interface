@@ -1,0 +1,8 @@
+// Top Nav
+.top-nav {
+    background-color: $teal;
+}
+
+.top-nav__item {
+    @extend .u-button;
+}

@@ -1,0 +1,29 @@
+// flags
+
+.flag-group {
+    margin: 0;
+    padding: 0;
+    // display: inline-block;
+}
+
+.flag-item {
+    list-style-type: none;
+    display: inline-block;
+    width: 15%;
+}
+
+.flag-item__rounded {
+    @extend .u-circle;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 4px $gray-20;
+}
+
+.flag-item__country-name {
+    color: $gray-50;
+}

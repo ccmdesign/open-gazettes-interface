@@ -1,0 +1,24 @@
+// Page Section
+.page-section {
+    padding: 60px 0;
+}
+
+.page-section__centered-content {
+    max-width: 660px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-section__title {
+    text-align: center;
+}
+
+
+.page-section--landing {
+
+}
+
+.page-section--dark-blue {
+    background-color: $dark-blue;
+    color: $white;
+}

@@ -22,3 +22,21 @@
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
+
+
+.u-button {
+    padding: 15px 20px;
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    color: $white-90;
+
+    &:hover { 
+        background-color: $gray-20;
+    }
+}
+
+.u-circle {
+    border-radius: 50%;
+    overflow: hidden;
+}

@@ -1,0 +1,12 @@
+// Reset
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="email"],
+input[type="search"] { border-radius: 0; }
+
+
+body {
+    font-family: $signika;
+    font-weight: 300;
+}

@@ -1,69 +1,55 @@
 {% extends '_base.html' %}
 {% block main %}
 
-<section class="page-section page-section--landing">
-    <div>
-        <h1>OPEN GAZETTES LOGO</h1>
+<section id="homepage-main-search" class="page-section page-section--landing">
+    <div class="page-section__centered-content">
+        <h1 class="page-section__title">OPEN GAZETTES LOGO</h1>
         
-        <form action="" class="search-field">
-            <input type="text">
-            <input type="submit">
-        </form>
+        <div class="main-search-field">
+          <form action="">
+              <input type="search" value="Search Gazettes">
+              <input type="submit" value="search" class="material-icons">
+          </form>
+          <a href="#">Advanced Search</a>
+        </div>
+
+        <h2>Filter by Jurisdiction</h2>
 
         <ul class="flag-group">
-            <li class="flag-rounded">
-                <picture>
-                 <source srcset="flag.svg" type="image/svg+xml">
-                 <img src="flag.png" alt="Country Name">
-                </picture>
-                <caption class="flag-rounded__country-name">Country Name</caption>
+            <li class="flag-item">
+                <div class="flag-item__rounded" style="background-image: url(images/belgium-flag.svg)"></div>
+                <span class="flag-item__country-name">Belgium</span>
             </li>
 
-            <li class="flag-rounded">
-                <picture>
-                 <source srcset="flag.svg" type="image/svg+xml">
-                 <img src="flag.png" alt="Country Name">
-                </picture>
-                <caption class="flag-rounded__country-name">Country Name</caption>
+            <li class="flag-item">
+                <div class="flag-item__rounded" style="background-image: url(images/france-flag.svg)"></div>
+                <span class="flag-item__country-name">France</span>
             </li>
 
-            <li class="flag-rounded">
-                <picture>
-                 <source srcset="flag.svg" type="image/svg+xml">
-                 <img src="flag.png" alt="Country Name">
-                </picture>
-                <caption class="flag-rounded__country-name">Country Name</caption>
+            <li class="flag-item">
+                <div class="flag-item__rounded" style="background-image: url(images/ireland-flag.svg)"></div>
+                <span class="flag-item__country-name">Ireland</span>
+            </li>
+            <li class="flag-item">
+                <div class="flag-item__rounded" style="background-image: url(images/luxembourg-flag.svg)"></div>
+                <span class="flag-item__country-name">Luxembourg</span>
             </li>
 
-            <li class="flag-rounded">
-                <picture>
-                 <source srcset="flag.svg" type="image/svg+xml">
-                 <img src="flag.png" alt="Country Name">
-                </picture>
-                <caption class="flag-rounded__country-name">Country Name</caption>
+            <li class="flag-item">
+                <div class="flag-item__rounded" style="background-image: url(images/spain-flag.svg)"></div>
+                <span class="flag-item__country-name">Spain</span>
             </li>
 
-            <li class="flag-rounded">
-                <picture>
-                 <source srcset="flag.svg" type="image/svg+xml">
-                 <img src="flag.png" alt="Country Name">
-                </picture>
-                <caption class="flag-rounded__country-name">Country Name</caption>
-            </li>
-
-            <li class="flag-rounded">
-                <picture>
-                 <source srcset="flag.svg" type="image/svg+xml">
-                 <img src="flag.png" alt="Country Name">
-                </picture>
-                <caption class="flag-rounded__country-name">Country Name</caption>
+            <li class="flag-item">
+                <div class="flag-item__rounded" style="background-image: url(images/united-kingdom-flag.svg)"></div>
+                <span class="flag-item__country-name">UK</span>
             </li>
         </ul>
     </div>
 </section>
 
-<section class="page-section">
-    <h1>What's Happening</h1>
+<section id="gazette-news" class="page-section page-section--dark-blue">
+    <h1 class="page-section__title">What's Happening</h1>
     <div class="row">
         <div class="medium-6 column">
             <div class="gazette-box">
@@ -71,9 +57,44 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
                 <div class="gazette-box__controls">
                     <div class="gazette-box__category">Dissolution</div>
+                    <img class="gazette-box__flag" src="images/united-kingdom-flag.svg" alt="">
                     <span class="gazette-box__pub-date">2 days ago</span>
-                    <img class="gazette-box__flag" src="" alt="">
+                </div>
+            </div>
+        </div>
 
+        <div class="medium-6 column">
+            <div class="gazette-box">
+                <h2>Gazette Name</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
+                <div class="gazette-box__controls">
+                    <div class="gazette-box__category">Dissolution</div>
+                    <img class="gazette-box__flag" src="images/ireland-flag.svg" alt="">
+                    <span class="gazette-box__pub-date">2 days ago</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="medium-6 column">
+            <div class="gazette-box">
+                <h2>Gazette Name</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
+                <div class="gazette-box__controls">
+                    <div class="gazette-box__category">Dissolution</div>
+                    <img class="gazette-box__flag" src="images/spain-flag.svg" alt="">
+                    <span class="gazette-box__pub-date">2 days ago</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="medium-6 column">
+            <div class="gazette-box">
+                <h2>Gazette Name</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
+                <div class="gazette-box__controls">
+                    <div class="gazette-box__category">Dissolution</div>
+                    <img class="gazette-box__flag" src="images/luxembourg-flag.svg" alt="">
+                    <span class="gazette-box__pub-date">2 days ago</span>
                 </div>
             </div>
         </div>
