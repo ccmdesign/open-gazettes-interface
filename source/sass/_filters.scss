@@ -6,6 +6,7 @@
 .filter-panel__item {
     vertical-align: middle;
     color: rgba($black, .8);
+    font-weight: 300;
 }
 
 .filter-panel--title {
@@ -43,10 +44,12 @@
 
 .js-filter-panel {
     max-height: 0;
-    height: auto;
     overflow: hidden;
+    transition: all .5s ease;
+
 }
 
 .js-filter-panel.js-is-open {
     max-height: 2000px;
+    transition: all .5s ease;
 }
