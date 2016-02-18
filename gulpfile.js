@@ -24,7 +24,7 @@ gulp.task('browserSync', function() {
 // Sass
 gulp.task('sass', function() {
   return gulp.src('source/sass/**/*.scss') // Gets all files ending with .scss in app/scss
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('public'))
     .pipe(browserSync.reload({
       stream: true
