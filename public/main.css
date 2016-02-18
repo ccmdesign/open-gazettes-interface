@@ -49,6 +49,10 @@ a:visited {
   .slider .slick-next:after {
     content: 'keyboard_arrow_right'; }
 
+.slider--dark .slick-arrow:before,
+.slider--dark .slick-arrow:after {
+  color: rgba(255, 255, 255, 0.2); }
+
 .u-material-icons, .slider .slick-arrow:before, .slider .slick-arrow:after {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -127,7 +131,7 @@ a:visited {
   margin-left: -21px; }
 
 .page-section {
-  padding: 30px 0 60px; }
+  padding: 20px 0 40px; }
 
 .page-section__centered-content {
   max-width: 660px;
@@ -136,7 +140,7 @@ a:visited {
 
 .page-section__h1 {
   text-align: center;
-  font-weight: 300; }
+  font-weight: 400; }
 
 .page-section__h2 {
   font-weight: 400;
@@ -254,6 +258,11 @@ a:visited {
     color: rgba(255, 255, 255, 0.9);
     list-style-type: none; }
 
+.footer__logo {
+  max-width: 200px;
+  opacity: .4;
+  margin: 0 auto 30px; }
+
 .copyright-information {
   background-color: rgba(0, 0, 0, 0.85);
   font-size: .9rem;
@@ -332,7 +341,8 @@ a:visited {
 .flag-item {
   list-style-type: none;
   display: inline-block;
-  width: 15%; }
+  width: 15%;
+  cursor: pointer; }
 
 .flag-item__rounded {
   width: 60px;
@@ -346,6 +356,9 @@ a:visited {
 
 .flag-item__country-name {
   color: rgba(0, 0, 0, 0.5); }
+
+.flag-item:hover .flag-item__country-name {
+  color: black; }
 
 .gazette-box {
   background-color: rgba(33, 60, 79, 0.1);
@@ -455,7 +468,8 @@ a:visited {
   background-position: left center; }
 
 .gazette-header {
-  margin-top: 40px; }
+  margin-top: 20px;
+  padding-bottom: 30px; }
 
 .gazette-header__panel-right {
   text-align: right; }
@@ -598,3 +612,10 @@ a:visited {
   cursor: pointer; }
   .active-filters__handle:hover {
     background-color: rgba(255, 255, 255, 0.3); }
+
+.homepage__main-logo {
+  max-width: 460px;
+  margin: 40px auto 30px; }
+
+.homepage__tagline {
+  margin-bottom: 30px; }
