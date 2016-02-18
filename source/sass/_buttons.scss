@@ -17,6 +17,15 @@
     }
 }
 
+.button--medium {
+    padding: 5px 50px;
+    background-color: rgba($dark-blue, .2);
+
+    &:hover {
+        background-color: $dark-blue;        
+    }
+}
+
 .button--small {
     @extend .u-button;
     padding: 4px 10px 4px 20px;
