@@ -21,6 +21,7 @@ $signika: 'Signika', sans-serif;
 @import "breakpoint";
 @import "slider";
 @import "utilities";
+@import "pagination";
 @import "page-section";
 @import "call-to-action";
 @import "buttons";
@@ -29,7 +30,11 @@ $signika: 'Signika', sans-serif;
 @import "search";
 @import "flags";
 @import "gazette-box";
+@import "filters";
 @import "use-cases";
+
+// Page specific Modules
 @import "gazette-page";
 @import "company-info";
+@import "results";
 @import "sandbox";

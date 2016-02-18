@@ -1,0 +1,83 @@
+.search-landing {
+    padding-bottom: 20px;
+}
+
+.search-landing__header {
+    margin-bottom: 30px;
+}
+
+.search-landing__tagline {
+    margin-left: 60px;
+}
+
+.results-section {
+
+}
+
+.results-controls {
+
+}
+
+.results-controls__title {
+    font-weight: 400;
+    color: rgba($black, .7);
+    margin: 0;
+}
+
+.results-controls__dropdown {
+    display: inline-block;
+    width: 70%;
+    margin-right: 20px;
+}
+
+.results-controls__view-switcher {
+    border-radius: 0;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    color: rgba($teal, .4);
+    
+    .material-icons {
+        line-height: .6;
+        vertical-align: middle;
+    }
+
+    &:hover {
+        background-color: rgba($black, .05);
+    }
+
+}
+
+.results-controls--active-view {
+    color: $teal;
+}
+
+.active-filters {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+// We should have color coded filters
+.active-filters__item {
+    display: inline-block;
+    background-color: $dark-blue;
+    color: $white;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.active-filters__handle {
+    font-size: 1rem;
+    vertical-align: -3px;
+    padding: 4px 6px 4px 4px;
+    margin-left: 6px;
+    border-left: 1px solid rgba($white, .3);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba($white, .3);
+    }
+}
+
+.results-list { 
+}

@@ -1,8 +1,8 @@
 // Gazette Box
 
 .gazette-box {
-    background-color: rgba($white, .1);
-    color: rgba($white, .8);
+    background-color: rgba($dark-blue, .1);
+    color: rgba($dark-blue, .8);
     margin: 15px 0;
 
     h2 {
@@ -10,7 +10,6 @@
         font-weight: 400;
         padding: 20px 20px 0 20px;
         margin: 0;
-        color: $white;
     }
 
     p {
@@ -21,7 +20,7 @@
 }
 
 .gazette-box__controls {
-    background-color: rgba($white, .1);
+    background-color: rgba($dark-blue, .1);
     font-size: .9rem;
     margin-top: 30px;
 }
@@ -43,7 +42,7 @@
     float: right;
     margin: 5px 5px 5px 20px;
     font-style: italic;
-    color: rgba($white, .4);
+    color: rgba($dark-blue, .4);
 }
 
 .gazette-box__flag {
@@ -51,3 +50,24 @@
     margin: 0 0 0 10px;
     height: 32px;
 }
+
+
+// Switching the colors for the Gazette Boxes over dark background
+
+.gazette-box--negative {
+    background-color: rgba($white, .1);
+    color: rgba($white, .8);
+
+    .gazette-box__controls { 
+        background-color: rgba($white, .1);
+    }
+
+    .gazette-box__pub-date {
+        color: rgba($white, .4);
+    }
+}
+
+
+
+
+

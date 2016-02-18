@@ -1,0 +1,211 @@
+{% extends '_base.html' %}
+{% block main %}
+
+<section class="page-section search-landing">
+    
+    <div class="row search-landing__header">
+        <div class="column medium-4">
+            <h1><img src="./images/open-gazettes-logo.png" alt=""></h1>
+        </div>
+        <div class="column medium-8">
+            <p class="search-landing__tagline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere laudantium, cum temporibus, quod quisquam doloribus! Blanditiis ipsam repellendus architecto</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 page-section__centered-content">
+            <div class="main-search-field">
+              <form action="">
+                  <input type="search" placeholder="Search Gazettes">
+                  <input type="submit" value="search" class="material-icons">
+              </form>
+              <a href="#" class="button--naked">Filters</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<form action="" class="js-filter-panel">
+    <section class="filter-panel">
+        <div class="row">
+            <div class="column medium-3">
+                <h3 class="filter-panel__item filter-panel--title">Filter by Jurisdiction</h3>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Belgium</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">France</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Ireland</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Luxembourg</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Spain</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">United Kingdom</label>
+            </div>
+
+            <div class="column medium-3">
+                <h3 class="filter-panel__item filter-panel--title">Filter by Classification</h3>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Dissolution</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Incorporation</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Dissolution</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Incorporation</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Dissolution</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Incorporation</label>
+            </div>
+
+            <div class="column medium-3">
+                <h3 class="filter-panel__item filter-panel--title">Filter by Subject</h3>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Company</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Incorporation</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Dissolution</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Incorporation</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Dissolution</label>
+                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Incorporation</label>
+            </div>
+
+            <div class="column medium-3">
+                <h3 class="filter-panel__item filter-panel--title">Filter by Date</h3>
+                <label class="filter-panel__item" for=""><input class="filter-panel__date" type="date"> to <input class="filter-panel__date" type="date"></label>
+                <h3 class="filter-panel__title filter-panel--title">Filter by Range</h3>
+                <label class="filter-panel__item" for=""><input class="filter-panel__range" type="range"></label>
+            </div>
+        </div>
+    </section>
+    <section class="filter-panel-submit">
+        <div class="row">
+            <div class="large-12 column">
+                <input class="button" type="submit" value="Search">
+            </div>
+        </div>
+    </section>
+</form>
+
+<section class="page-section results-section">
+    <div class="row results-controls">
+        <div class="column large-6">
+            <h2 class="results-controls__title">5 Notices found</h2>
+        </div>
+        <div class="column large-6">
+            <form action="">
+                <select name="" id="" class="results-controls__dropdown">
+                    <option value="">10 per page</option>
+                    <option value="">50 per page</option>
+                </select>
+
+                <div class="results-controls__view-switcher"><i class="material-icons">view_list</i></div>
+                <div class="results-controls__view-switcher results-controls--active-view"><i class="material-icons">view_module</i></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 column">
+            <div class="active-filters">
+                <div class="active-filters__item">Dissolution <i class="material-icons active-filters__handle">close</i></div>
+                <div class="active-filters__item">Filter One <i class="material-icons active-filters__handle">close</i></div>
+                <div class="active-filters__item">Filter with longer name <i class="material-icons active-filters__handle">close</i></div>
+                <!-- Testing a lot of filters -->
+                <!-- <div class="active-filters__item">Dissolution <i class="material-icons active-filters__handle">close</i></div>
+                <div class="active-filters__item">Filter One <i class="material-icons active-filters__handle">close</i></div>
+                <div class="active-filters__item">Filter with longer name <i class="material-icons active-filters__handle">close</i></div>
+                <div class="active-filters__item">Filter One <i class="material-icons active-filters__handle">close</i></div>
+                <div class="active-filters__item">Filter with longer name <i class="material-icons active-filters__handle">close</i></div>
+                <div class="active-filters__item">Dissolution <i class="material-icons active-filters__handle">close</i></div>
+                <div class="active-filters__item">Filter One <i class="material-icons active-filters__handle">close</i></div>
+                <div class="active-filters__item">Filter with longer name <i class="material-icons active-filters__handle">close</i></div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="results-list">
+        <div class="row">
+            <div class="medium-6 column">
+                  <div class="gazette-box">
+                      <h2>Gazette Name</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
+                      <div class="gazette-box__controls">
+                          <div class="gazette-box__category">Dissolution</div>
+                          <img class="gazette-box__flag" src="images/united-kingdom-flag.svg" alt="">
+                          <span class="gazette-box__pub-date">2 days ago</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="medium-6 column">
+                  <div class="gazette-box">
+                      <h2>Gazette Name</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
+                      <div class="gazette-box__controls">
+                          <div class="gazette-box__category">Dissolution</div>
+                          <img class="gazette-box__flag" src="images/ireland-flag.svg" alt="">
+                          <span class="gazette-box__pub-date">2 days ago</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="medium-6 column">
+                  <div class="gazette-box">
+                      <h2>Gazette Name</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
+                      <div class="gazette-box__controls">
+                          <div class="gazette-box__category">Dissolution</div>
+                          <img class="gazette-box__flag" src="images/spain-flag.svg" alt="">
+                          <span class="gazette-box__pub-date">2 days ago</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="medium-6 column">
+                  <div class="gazette-box">
+                      <h2>Gazette Name</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
+                      <div class="gazette-box__controls">
+                          <div class="gazette-box__category">Dissolution</div>
+                          <img class="gazette-box__flag" src="images/luxembourg-flag.svg" alt="">
+                          <span class="gazette-box__pub-date">2 days ago</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="medium-6 column end">
+                  <div class="gazette-box">
+                      <h2>Gazette Name</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
+                      <div class="gazette-box__controls">
+                          <div class="gazette-box__category">Dissolution</div>
+                          <img class="gazette-box__flag" src="images/spain-flag.svg" alt="">
+                          <span class="gazette-box__pub-date">2 days ago</span>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="column large-12">
+                <div class="pagination">
+                    <a href="#" class="pagination__item pagination--first">
+                        <i class="material-icons">keyboard_arrow_left</i>
+                        <i class="material-icons">keyboard_arrow_left</i>
+                    </a>
+                    <a href="#" class="pagination__item pagination--prev">
+                        <i class="material-icons">keyboard_arrow_left</i>
+                    </a>
+
+                    <a href="#" class="pagination__item">1</a>
+                    <a href="#" class="pagination__item">2</a>
+                    <a href="#" class="pagination__item">3</a>
+                    <a href="#" class="pagination__item">4</a>
+                    <a href="#" class="pagination__item">5</a>
+
+                    <a href="#" class="pagination__item pagination--next">
+                        <i class="material-icons">keyboard_arrow_right</i>
+                    </a>
+                    <a href="#" class="pagination__item pagination--last">
+                        <i class="material-icons">keyboard_arrow_right</i>
+                        <i class="material-icons">keyboard_arrow_right</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+
+
+{% endblock %}
