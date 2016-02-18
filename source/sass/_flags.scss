@@ -10,6 +10,7 @@
     list-style-type: none;
     display: inline-block;
     width: 15%;
+    cursor: pointer;
 }
 
 .flag-item__rounded {
@@ -26,4 +27,10 @@
 
 .flag-item__country-name {
     color: rgba($black, .5);
+}
+
+.flag-item:hover {
+    .flag-item__country-name {
+        color: rgba($black, 1);       
+    }
 }
