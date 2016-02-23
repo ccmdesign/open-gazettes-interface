@@ -16,7 +16,7 @@ gulp.task('clean:dist', function() {
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: '_site'
+      baseDir: 'public'
     },
   })
 })
@@ -25,7 +25,7 @@ gulp.task('browserSync', function() {
 gulp.task('sass', function() {
   return gulp.src('source/sass/**/*.scss') // Gets all files ending with .scss in app/scss
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('_site'))
+    .pipe(gulp.dest('public'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -33,17 +33,17 @@ gulp.task('sass', function() {
 
 gulp.task('vendor', function(){
   return gulp.src('source/static/vendor/**/*')
-  .pipe(gulp.dest('_site/vendor'))
+  .pipe(gulp.dest('public/vendor'))
 });
 
 gulp.task('image-dev', function(){
   return gulp.src('source/static/images/**/*')
-  .pipe(gulp.dest('_site/images'))
+  .pipe(gulp.dest('public/images'))
 });
 
 gulp.task('js-dev', function(){
   return gulp.src('source/static/*.js')
-  .pipe(gulp.dest('_site'))
+  .pipe(gulp.dest('public'))
 });
 
 // Nunjucks
@@ -59,7 +59,7 @@ gulp.task('nunjucks', function() {
   // Renders template with nunjucks
   .pipe(nunjucksRender())
   // output files in app folder
-  .pipe(gulp.dest('_site'))
+  .pipe(gulp.dest('public'))
   .pipe(browserSync.reload({
       stream: true
     }))
