@@ -3,116 +3,116 @@
 {% block main %}
 
 <section class="page-section search-landing">
-    <div class="row search-landing__header">
-        <div class="column medium-4">
-            <h1><img src="./images/open-gazettes-logo.png" alt=""></h1>
-        </div>
-        <div class="column medium-8">
-            <p class="search-landing__tagline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere laudantium, cum temporibus, quod quisquam doloribus! Blanditiis ipsam repellendus architecto</p>
-        </div>
+  <div class="row search-landing__header">
+    <div class="column medium-4">
+      <h1><img src="./images/open-gazettes-logo.png" alt=""></h1>
     </div>
+    <div class="column medium-8">
+      <p class="search-landing__tagline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere laudantium, cum temporibus, quod quisquam doloribus! Blanditiis ipsam repellendus architecto</p>
+    </div>
+  </div>
 
-    <div class="row">
-        <div class="large-12 page-section__centered-content">
-            <div class="main-search-field">
-              <form action="">
-                  <input type="search" placeholder="Search Gazettes">
-                  <input type="submit" value="search" class="material-icons">
-              </form>
-              <a href="#" class="button button--medium js-filter-trigger">Filters</a>
-            </div>
-        </div>
+  <div class="row">
+    <div class="large-12 page-section__centered-content">
+      <div class="main-search-field">
+        <form action="">
+          <input type="search" placeholder="Search Gazettes">
+          <input type="submit" value="search" class="material-icons">
+        </form>
+        <a href="#" class="button button--medium js-filter-trigger">Filters</a>
+      </div>
     </div>
+  </div>
 </section>
 
 <form action="" class="js-filter-panel">
-    <section class="filter-panel">
-        <div class="row">
+  <section class="filter-panel">
+    <div class="row">
 {{ macros.filter_panel__item('Jurisdiction', ['Belgium', 'France', 'Ireland', 'Luxembourg', 'Spain', 'United Kingdom']) }}
 {{ macros.filter_panel__item('Classification', ['Dissolution', 'Incorporation']) }}
 {{ macros.filter_panel__item('Company', ['Company 1', 'Company 2']) }}
-            <div class="column medium-3">
-                <h3 class="filter-panel__item filter-panel--title">Filter by Date</h3>
-                <label class="filter-panel__item" for=""><input class="filter-panel__date" type="date"> to <input class="filter-panel__date" type="date"></label>
-                <h3 class="filter-panel__title filter-panel--title">Filter by Range</h3>
-                <label class="filter-panel__item" for=""><input class="filter-panel__range" type="range"></label>
-            </div>
-        </div>
-    </section>
-    <section class="filter-panel-submit">
-        <div class="row">
-            <div class="large-12 column">
-                <input class="button" type="submit" value="Search">
-            </div>
-        </div>
-    </section>
+      <div class="column medium-3">
+        <h3 class="filter-panel__item filter-panel--title">Filter by Date</h3>
+        <label class="filter-panel__item" for=""><input class="filter-panel__date" type="date"> to <input class="filter-panel__date" type="date"></label>
+        <h3 class="filter-panel__title filter-panel--title">Filter by Range</h3>
+        <label class="filter-panel__item" for=""><input class="filter-panel__range" type="range"></label>
+      </div>
+    </div>
+  </section>
+  <section class="filter-panel-submit">
+    <div class="row">
+      <div class="large-12 column">
+        <input class="button" type="submit" value="Search">
+      </div>
+    </div>
+  </section>
 </form>
 
 <section class="page-section results-section">
-    <div class="row results-controls">
-        <div class="column large-6">
-            <h2 class="results-controls__title">5 Notices found</h2>
-        </div>
-        <div class="column large-6">
-            <form action="">
-                <select name="" id="" class="results-controls__dropdown">
-                    <option value="">10 per page</option>
-                    <option value="">50 per page</option>
-                </select>
-
-                <div class="results-controls__view-switcher"><i class="material-icons">view_list</i></div>
-                <div class="results-controls__view-switcher results-controls--active-view"><i class="material-icons">view_module</i></div>
-            </form>
-        </div>
+  <div class="row results-controls">
+    <div class="column large-6">
+      <h2 class="results-controls__title">5 Notices found</h2>
     </div>
+    <div class="column large-6">
+      <form action="">
+        <select name="" id="" class="results-controls__dropdown">
+          <option value="">10 per page</option>
+          <option value="">50 per page</option>
+        </select>
 
-    <div class="row">
-        <div class="large-12 column">
-            <div class="active-filters">
+        <div class="results-controls__view-switcher"><i class="material-icons">view_list</i></div>
+        <div class="results-controls__view-switcher results-controls--active-view"><i class="material-icons">view_module</i></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 column">
+      <div class="active-filters">
 {% set texts = ['Dissolution', 'Filter One', 'Filter with longer name'] %}
 {% for text in texts %}
 {{ macros.active_filters__item(text) }}
 {% endfor %}
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="results-list">
-        <div class="row">
+  <div class="results-list">
+    <div class="row">
 {{ macros.gazette_box('gb') }}
 {{ macros.gazette_box('ie') }}
 {{ macros.gazette_box('es') }}
 {{ macros.gazette_box('lu') }}
 {{ macros.gazette_box('be', end=true) }}
-        </div>
     </div>
-    <div class="row">
-        <div class="column large-12">
-            <div class="pagination">
-                <a href="#" class="pagination__item pagination--first">
-                    <i class="material-icons">keyboard_arrow_left</i>
-                    <i class="material-icons">keyboard_arrow_left</i>
-                </a>
-                <a href="#" class="pagination__item pagination--prev">
-                    <i class="material-icons">keyboard_arrow_left</i>
-                </a>
+  </div>
+  <div class="row">
+    <div class="column large-12">
+      <div class="pagination">
+        <a href="#" class="pagination__item pagination--first">
+          <i class="material-icons">keyboard_arrow_left</i>
+          <i class="material-icons">keyboard_arrow_left</i>
+        </a>
+        <a href="#" class="pagination__item pagination--prev">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </a>
 
-                <a href="#" class="pagination__item">1</a>
-                <a href="#" class="pagination__item">2</a>
-                <a href="#" class="pagination__item">3</a>
-                <a href="#" class="pagination__item">4</a>
-                <a href="#" class="pagination__item">5</a>
+        <a href="#" class="pagination__item">1</a>
+        <a href="#" class="pagination__item">2</a>
+        <a href="#" class="pagination__item">3</a>
+        <a href="#" class="pagination__item">4</a>
+        <a href="#" class="pagination__item">5</a>
 
-                <a href="#" class="pagination__item pagination--next">
-                    <i class="material-icons">keyboard_arrow_right</i>
-                </a>
-                <a href="#" class="pagination__item pagination--last">
-                    <i class="material-icons">keyboard_arrow_right</i>
-                    <i class="material-icons">keyboard_arrow_right</i>
-                </a>
-            </div>
-        </div>
+        <a href="#" class="pagination__item pagination--next">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </a>
+        <a href="#" class="pagination__item pagination--last">
+          <i class="material-icons">keyboard_arrow_right</i>
+          <i class="material-icons">keyboard_arrow_right</i>
+        </a>
+      </div>
     </div>
+  </div>
 </section>
 
 {% endblock %}
