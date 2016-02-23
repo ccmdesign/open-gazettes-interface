@@ -2,7 +2,7 @@
 
 {% macro flag_item(code, name) %}
 <li class="flag-item">
-  <div class="flag-item__rounded" style="background-image: url({{ image_path code + '-flag.svg' }})"></div>
+  <div class="flag-item__rounded" style="background-image: url({{ image_path(code + '-flag.svg') }})"></div>
   <span class="flag-item__country-name">{{ name }}</span>
 </li>
 {% endmacro %}
@@ -25,7 +25,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
     <div class="gazette-box__controls">
       <div class="gazette-box__category">Dissolution</div>
-      <img class="gazette-box__flag" src="{{ image_path code + '-flag.svg' }}" alt="">
+      <img class="gazette-box__flag" src="{{ image_path(code + '-flag.svg') }}" alt="">
       <span class="gazette-box__pub-date">2 days ago</span>
     </div>
   </div>
@@ -40,7 +40,7 @@
 
 {% macro use_case(side, image) %}
 <div class="slider__item use-cases--{{ side }}">
-  <div class="page-section use-cases__illustration" style="background-image: url({{ image_path image }})">
+  <div class="page-section use-cases__illustration" style="background-image: url({{ image_path(image) }})">
     <div class="row">
 {% if side == 'left' %}
 {{ use_case_heading() }}
