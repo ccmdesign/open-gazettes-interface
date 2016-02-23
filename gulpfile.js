@@ -51,7 +51,7 @@ gulp.task('nunjucks', function() {
   nunjucksRender.nunjucks.configure(['source/templates/']);
 
   // Gets .html and .nunjucks files in pages
-  return gulp.src('source/templates/**/*.+(html|nunjucks)')
+  return gulp.src('source/templates/**/[^_].+(html|nunjucks)')
   // Adding data to Nunjucks
   .pipe(data(function() {
     return require('./source/data/data.json')
