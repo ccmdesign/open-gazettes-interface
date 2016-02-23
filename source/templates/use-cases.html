@@ -2,10 +2,11 @@
 {% extends '_base.html' %}
 {% block main %}
 
-{{ macros.use_cases('left', 'use-case-1.jpg') }}
-{{ macros.use_cases('right', 'use-case-2.jpg') }}
-{{ macros.use_cases('left', 'use-case-1.jpg') }}
-{{ macros.use_cases('right', 'use-case-2.jpg') }}
-{{ macros.use_cases('left', 'use-case-1.jpg') }}
+{% set side = cycler('left', 'right') %}
+{{ macros.use_cases(side.next(), 'use-case-1.jpg') }}
+{{ macros.use_cases(side.next(), 'use-case-2.jpg') }}
+{{ macros.use_cases(side.next(), 'use-case-1.jpg') }}
+{{ macros.use_cases(side.next(), 'use-case-2.jpg') }}
+{{ macros.use_cases(side.next(), 'use-case-1.jpg') }}
 
 {% endblock %}

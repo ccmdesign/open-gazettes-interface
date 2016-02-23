@@ -50,8 +50,9 @@
 </section>
 
 <section id="use-cases" class="use-cases slider">
-{{ macros.use_case('left', 'use-case-1.jpg') }}
-{{ macros.use_case('right', 'use-case-2.jpg') }}
+{% set side = cycler('left', 'right') %}
+{{ macros.use_case(side.next(), 'use-case-1.jpg') }}
+{{ macros.use_case(side.next(), 'use-case-2.jpg') }}
 </section>
 
 {% endblock %}
