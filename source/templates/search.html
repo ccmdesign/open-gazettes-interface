@@ -1,8 +1,8 @@
+{% import '_macros.html' as macros %}
 {% extends '_base.html' %}
 {% block main %}
 
 <section class="page-section search-landing">
-    
     <div class="row search-landing__header">
         <div class="column medium-4">
             <h1><img src="./images/open-gazettes-logo.png" alt=""></h1>
@@ -28,36 +28,9 @@
 <form action="" class="js-filter-panel">
     <section class="filter-panel">
         <div class="row">
-            <div class="column medium-3">
-                <h3 class="filter-panel__item filter-panel--title">Filter by Jurisdiction</h3>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Belgium</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">France</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Ireland</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Luxembourg</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Spain</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">United Kingdom</label>
-            </div>
-
-            <div class="column medium-3">
-                <h3 class="filter-panel__item filter-panel--title">Filter by Classification</h3>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Dissolution</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Incorporation</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Dissolution</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Incorporation</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Dissolution</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Incorporation</label>
-            </div>
-
-            <div class="column medium-3">
-                <h3 class="filter-panel__item filter-panel--title">Filter by Subject</h3>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Company</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Incorporation</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Dissolution</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Incorporation</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Dissolution</label>
-                <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">Incorporation</label>
-            </div>
-
+{{ macros.filter_panel__item('Jurisdiction', ['Belgium', 'France', 'Ireland', 'Luxembourg', 'Spain', 'United Kingdom']) }}
+{{ macros.filter_panel__item('Classification', ['Dissolution', 'Incorporation']) }}
+{{ macros.filter_panel__item('Company', ['Company 1', 'Company 2']) }}
             <div class="column medium-3">
                 <h3 class="filter-panel__item filter-panel--title">Filter by Date</h3>
                 <label class="filter-panel__item" for=""><input class="filter-panel__date" type="date"> to <input class="filter-panel__date" type="date"></label>
@@ -96,116 +69,50 @@
     <div class="row">
         <div class="large-12 column">
             <div class="active-filters">
-                <div class="active-filters__item">Dissolution <i class="material-icons active-filters__handle">close</i></div>
-                <div class="active-filters__item">Filter One <i class="material-icons active-filters__handle">close</i></div>
-                <div class="active-filters__item">Filter with longer name <i class="material-icons active-filters__handle">close</i></div>
-                <!-- Testing a lot of filters -->
-                <!-- <div class="active-filters__item">Dissolution <i class="material-icons active-filters__handle">close</i></div>
-                <div class="active-filters__item">Filter One <i class="material-icons active-filters__handle">close</i></div>
-                <div class="active-filters__item">Filter with longer name <i class="material-icons active-filters__handle">close</i></div>
-                <div class="active-filters__item">Filter One <i class="material-icons active-filters__handle">close</i></div>
-                <div class="active-filters__item">Filter with longer name <i class="material-icons active-filters__handle">close</i></div>
-                <div class="active-filters__item">Dissolution <i class="material-icons active-filters__handle">close</i></div>
-                <div class="active-filters__item">Filter One <i class="material-icons active-filters__handle">close</i></div>
-                <div class="active-filters__item">Filter with longer name <i class="material-icons active-filters__handle">close</i></div> -->
+{% set texts = ['Dissolution', 'Filter One', 'Filter with longer name'] %}
+{% for text in texts %}
+{{ macros.active_filters__item(text) }}
+{% endfor %}
             </div>
         </div>
     </div>
 
     <div class="results-list">
         <div class="row">
-            <div class="medium-6 column">
-                  <div class="gazette-box">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/united-kingdom-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
+{{ macros.gazette_box('gb') }}
+{{ macros.gazette_box('ie') }}
+{{ macros.gazette_box('es') }}
+{{ macros.gazette_box('lu') }}
+{{ macros.gazette_box('be', end=true) }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="column large-12">
+            <div class="pagination">
+                <a href="#" class="pagination__item pagination--first">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                    <i class="material-icons">keyboard_arrow_left</i>
+                </a>
+                <a href="#" class="pagination__item pagination--prev">
+                    <i class="material-icons">keyboard_arrow_left</i>
+                </a>
 
-              <div class="medium-6 column">
-                  <div class="gazette-box">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/ireland-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
+                <a href="#" class="pagination__item">1</a>
+                <a href="#" class="pagination__item">2</a>
+                <a href="#" class="pagination__item">3</a>
+                <a href="#" class="pagination__item">4</a>
+                <a href="#" class="pagination__item">5</a>
 
-              <div class="medium-6 column">
-                  <div class="gazette-box">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/spain-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="medium-6 column">
-                  <div class="gazette-box">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/luxembourg-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="medium-6 column end">
-                  <div class="gazette-box">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/spain-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
-
+                <a href="#" class="pagination__item pagination--next">
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </a>
+                <a href="#" class="pagination__item pagination--last">
+                    <i class="material-icons">keyboard_arrow_right</i>
+                    <i class="material-icons">keyboard_arrow_right</i>
+                </a>
             </div>
         </div>
-        <div class="row">
-            <div class="column large-12">
-                <div class="pagination">
-                    <a href="#" class="pagination__item pagination--first">
-                        <i class="material-icons">keyboard_arrow_left</i>
-                        <i class="material-icons">keyboard_arrow_left</i>
-                    </a>
-                    <a href="#" class="pagination__item pagination--prev">
-                        <i class="material-icons">keyboard_arrow_left</i>
-                    </a>
-
-                    <a href="#" class="pagination__item">1</a>
-                    <a href="#" class="pagination__item">2</a>
-                    <a href="#" class="pagination__item">3</a>
-                    <a href="#" class="pagination__item">4</a>
-                    <a href="#" class="pagination__item">5</a>
-
-                    <a href="#" class="pagination__item pagination--next">
-                        <i class="material-icons">keyboard_arrow_right</i>
-                    </a>
-                    <a href="#" class="pagination__item pagination--last">
-                        <i class="material-icons">keyboard_arrow_right</i>
-                        <i class="material-icons">keyboard_arrow_right</i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
+    </div>
 </section>
-
-
 
 {% endblock %}

@@ -1,53 +1,32 @@
+{% import '_macros.html' as macros %}
 {% extends '_base.html' %}
 {% block main %}
 
 <section id="homepage-main-search" class="page-section page-section--landing homepage">
-    <div class="page-section__centered-content">
-        <h1 class="homepage__main-logo"><img src="images/open-gazettes-logo.png" alt=""></h1>
-        
-        <p class="homepage__tagline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quas, sequi labore ullam quia repudiandae numquam amet, mollitia est sunt incidunt</p>
-        
-        <div class="main-search-field">
-          <form action="">
-              <input type="search" placeholder="Search Gazettes">
-              <input type="submit" value="search" class="material-icons">
-          </form>
-          <a href="#" class="button--naked">Advanced Search</a>
-        </div>
+  <div class="page-section__centered-content">
+    <h1 class="homepage__main-logo"><img src="images/open-gazettes-logo.png" alt=""></h1>
 
-        <h2 class="page-section__h2">Filter by Jurisdiction</h2>
+    <p class="homepage__tagline">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quas, sequi labore ullam quia repudiandae numquam amet, mollitia est sunt incidunt</p>
 
-        <ul class="flag-group">
-            <li class="flag-item">
-                <div class="flag-item__rounded" style="background-image: url(images/belgium-flag.svg)"></div>
-                <span class="flag-item__country-name">Belgium</span>
-            </li>
-
-            <li class="flag-item">
-                <div class="flag-item__rounded" style="background-image: url(images/france-flag.svg)"></div>
-                <span class="flag-item__country-name">France</span>
-            </li>
-
-            <li class="flag-item">
-                <div class="flag-item__rounded" style="background-image: url(images/ireland-flag.svg)"></div>
-                <span class="flag-item__country-name">Ireland</span>
-            </li>
-            <li class="flag-item">
-                <div class="flag-item__rounded" style="background-image: url(images/luxembourg-flag.svg)"></div>
-                <span class="flag-item__country-name">Luxembourg</span>
-            </li>
-
-            <li class="flag-item">
-                <div class="flag-item__rounded" style="background-image: url(images/spain-flag.svg)"></div>
-                <span class="flag-item__country-name">Spain</span>
-            </li>
-
-            <li class="flag-item">
-                <div class="flag-item__rounded" style="background-image: url(images/united-kingdom-flag.svg)"></div>
-                <span class="flag-item__country-name">UK</span>
-            </li>
-        </ul>
+    <div class="main-search-field">
+      <form action="">
+        <input type="search" placeholder="Search Gazettes">
+        <input type="submit" value="search" class="material-icons">
+      </form>
+      <a href="#" class="button--naked">Advanced Search</a>
     </div>
+
+    <h2 class="page-section__h2">Filter by Jurisdiction</h2>
+
+    <ul class="flag-group">
+{{ macros.flag_item('be', 'Belgium') }}
+{{ macros.flag_item('fr', 'France') }}
+{{ macros.flag_item('ie', 'Ireland') }}
+{{ macros.flag_item('lu', 'Luxembourg') }}
+{{ macros.flag_item('es', 'Spain') }}
+{{ macros.flag_item('gb', 'UK') }}
+    </ul>
+  </div>
 </section>
 
 <section id="call-to-action" class="call-to-action-section">
@@ -55,7 +34,7 @@
     <div class="medium-8 column">
       <!-- Max length of this call to action is 3 lines (278 chars) -->
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quasi molestias ea quas, vel, cum, eligendi voluptatem praesentium incidunt optio quam nesciunt, quae quod temporibus culpa facere voluptas quia officiis eligendi voluptatem praesentium incidunt facere voluptas.</p>
-    </div>  
+    </div>
     <div class="medium-4 column call-to-action-section__button">
       <a href="#" class="button--large">Call to Action</a>
     </div>
@@ -63,159 +42,16 @@
 </section>
 
 <section id="gazette-news" class="page-section page-section--dark-blue page-section--arrow">
-    <h1 class="page-section__h1">What's Happening</h1>
-    <div class="slider slider--dark">
-      <div class="slider__item">
-          <div class="row">
-              <div class="medium-6 column">
-                  <div class="gazette-box gazette-box--negative">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/united-kingdom-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="medium-6 column">
-                  <div class="gazette-box gazette-box--negative">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/ireland-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="medium-6 column">
-                  <div class="gazette-box gazette-box--negative">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/spain-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="medium-6 column">
-                  <div class="gazette-box gazette-box--negative">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/luxembourg-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-
-        <div class="slider__item">
-          <div class="row">
-              <div class="medium-6 column">
-                  <div class="gazette-box gazette-box--negative">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/united-kingdom-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="medium-6 column">
-                  <div class="gazette-box gazette-box--negative">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/ireland-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="medium-6 column">
-                  <div class="gazette-box gazette-box--negative">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/spain-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="medium-6 column">
-                  <div class="gazette-box gazette-box--negative">
-                      <h2>Gazette Name</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
-                      <div class="gazette-box__controls">
-                          <div class="gazette-box__category">Dissolution</div>
-                          <img class="gazette-box__flag" src="images/luxembourg-flag.svg" alt="">
-                          <span class="gazette-box__pub-date">2 days ago</span>
-                      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-    </div>
-
+  <h1 class="page-section__h1">What's Happening</h1>
+  <div class="slider slider--dark">
+{{ macros.gazette_boxes(dark=true) }}
+{{ macros.gazette_boxes(dark=true) }}
+  </div>
 </section>
 
 <section id="use-cases" class="use-cases slider">
-  <div class="slider__item use-cases--left">
-    <div class="page-section use-cases__illustration" style="background-image: url(images/use-case-1.jpg">
-      <div class="row">
-          <div class="column large-6 use-cases__panel">
-            <h2 class="use-cases__h2">Use Cases</h2>
-          </div>
-
-          <div class="column large-6 use-cases__panel">
-            <h2 class="use-cases__h2">Bank Employees</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae molestiae corrupti placeat eum numquam blanditiis. Voluptate a dolores quidem saepe adipisci excepturi, non aspernatur recusandae, praesentium voluptas dignissimos quos.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum pariatur fuga quisquam minima distinctio impedit similique dignissimos, sunt itaque. Eaque harum fugit amet? Iste harum error tempora quod dolor, veniam.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum pariatur fuga quisquam minima distinctio impedit similique dignissimos, sunt itaque. Eaque harum fugit amet? Iste harum error tempora quod dolor, veniam.</p>
-            <p><a href="#" class="button--small">About the API <i class="material-icons">arrow_forward</i></a></p>
-          </div>
-        </div>
-      </div>
-  </div>
-  
-  <div class="slider__item use-cases--right">
-      <div class="page-section use-cases__illustration" style="background-image: url(images/use-case-2.jpg">
-          <div class="row">
-              <div class="column large-6 use-cases__panel">
-                  <h2 class="use-cases__h2">Bank Employees</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae molestiae corrupti placeat eum numquam blanditiis. Voluptate a dolores quidem saepe adipisci excepturi, non aspernatur recusandae, praesentium voluptas dignissimos quos.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum pariatur fuga quisquam minima distinctio impedit similique dignissimos, sunt itaque. Eaque harum fugit amet? Iste harum error tempora quod dolor, veniam.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum pariatur fuga quisquam minima distinctio impedit similique dignissimos, sunt itaque. Eaque harum fugit amet? Iste harum error tempora quod dolor, veniam.</p>
-                  <p><a href="#" class="button--small">About the API <i class="material-icons">arrow_forward</i></a></p>
-              </div>
-
-              <div class="column large-6 use-cases__panel">
-                  <h2 class="use-cases__h2">Use Cases</h2>
-              </div>
-          </div>
-      </div>
-  </div>
-
+{{ macros.use_case('left', 'use-case-1.jpg') }}
+{{ macros.use_case('right', 'use-case-2.jpg') }}
 </section>
 
-
-
-{# {% for image in images %}
-  <div class="gallery__item">
-    <img src="{{image.src}}" alt="{{image.alt}}">
-  </div>
-  {% endfor %} #}
 {% endblock %}

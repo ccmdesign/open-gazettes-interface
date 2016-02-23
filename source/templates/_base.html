@@ -1,28 +1,19 @@
+{% import '_macros.html' as macros %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Icons and Typography Assets -->
-    <link href='https://fonts.googleapis.com/css?family=Signika:300,600,400,700|Signika+Negative:300,600,400,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <script src="vendor/modernizr.js"></script> 
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika:300,600,400,700|Signika+Negative:300,600,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="vendor/modernizr.js"></script>
     <!-- Having the full JQuery might be overkill.  -->
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script> 
-
-    <!-- Vendor Stuff -->
-    <link rel="stylesheet" href="vendor/foundation.css">
-
-
-    <link rel="stylesheet" href="vendor/slick.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="vendor/slick.min.js"></script>
-    
     <script src="scripts.js"></script>
-
+    <link rel="stylesheet" href="vendor/foundation.css">
+    <link rel="stylesheet" href="vendor/slick.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -54,43 +45,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="column medium-3 small-6">
-                <h3>Footer Title</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                </ul>
-            </div>
-            <div class="column medium-3 small-6">
-                <h3>Footer Title</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                </ul>
-            </div>
-            <div class="column medium-3 small-6">
-                <h3>Footer Title</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                </ul>
-            </div>
-            <div class="column medium-3 small-6">
-                <h3>Footer Title</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                </ul>
-            </div>
-            
+{{ macros.footer_column() }}
+{{ macros.footer_column() }}
+{{ macros.footer_column() }}
+{{ macros.footer_column() }}
         </div>
     </section>
     <section class="copyright-information">
@@ -103,7 +61,6 @@
                     <span>Brought to you by</span>
                     <a href="https://opencorporates.com/" target="_blank"><img src="images/open-corporates-logo-grayscale.png" alt="Open Corporates"></a>
                 </div>
-                
             </div>
         </div>
     </section>

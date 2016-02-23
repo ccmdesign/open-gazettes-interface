@@ -1,0 +1,94 @@
+{% macro flag_item(code, name) %}
+<li class="flag-item">
+  <div class="flag-item__rounded" style="background-image: url(images/{{ code }}-flag.svg)"></div>
+  <span class="flag-item__country-name">{{ name }}</span>
+</li>
+{% endmacro %}
+
+{% macro gazette_boxes(dark=false) %}
+<div class="slider__item">
+  <div class="row">
+{{ gazette_box('gb', dark=dark) }}
+{{ gazette_box('ie', dark=dark) }}
+{{ gazette_box('es', dark=dark) }}
+{{ gazette_box('lu', dark=dark) }}
+  </div>
+</div>
+{% endmacro %}
+
+{% macro gazette_box(code, dark=false, end=false) %}
+<div class="medium-6 column{% if end %} end{% endif %}">
+  <div class="gazette-box{% if dark %} gazette-box--negative{% endif %}">
+    <h2>Gazette Name</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
+    <div class="gazette-box__controls">
+      <div class="gazette-box__category">Dissolution</div>
+      <img class="gazette-box__flag" src="images/{{ code }}-flag.svg" alt="">
+      <span class="gazette-box__pub-date">2 days ago</span>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro use_cases(side, image) %}
+<section class="use-cases slider">
+{{ use_case(side, image) }}
+</section>
+{% endmacro %}
+
+{% macro use_case(side, image) %}
+<div class="slider__item use-cases--{{ side }}">
+  <div class="page-section use-cases__illustration" style="background-image: url(images/{{ image }}">
+    <div class="row">
+{% if side == 'left' %}
+{{ use_case_heading() }}
+{{ use_case_content() }}
+{% else %}
+{{ use_case_content() }}
+{{ use_case_heading() }}
+{% endif %}
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro use_case_heading() %}
+<div class="column large-6 use-cases__panel">
+  <h2 class="use-cases__h2">Use Cases</h2>
+</div>
+{% endmacro %}
+
+{% macro use_case_content() %}
+<div class="column large-6 use-cases__panel">
+  <h2 class="use-cases__h2">Bank Employees</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae molestiae corrupti placeat eum numquam blanditiis. Voluptate a dolores quidem saepe adipisci excepturi, non aspernatur recusandae, praesentium voluptas dignissimos quos.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum pariatur fuga quisquam minima distinctio impedit similique dignissimos, sunt itaque. Eaque harum fugit amet? Iste harum error tempora quod dolor, veniam.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum pariatur fuga quisquam minima distinctio impedit similique dignissimos, sunt itaque. Eaque harum fugit amet? Iste harum error tempora quod dolor, veniam.</p>
+  <p><a href="#" class="button--small">About the API <i class="material-icons">arrow_forward</i></a></p>
+</div>
+{% endmacro %}
+
+{% macro filter_panel__item(name, values) %}
+<div class="column medium-3">
+  <h3 class="filter-panel__item filter-panel--title">Filter by {{ name }}</h3>
+{% for value in values %}
+  <label class="filter-panel__item" for=""><input class="filter-panel__checkbox" type="checkbox">{{ value }}</label>
+{% endfor %}
+</div>
+{% endmacro %}
+
+{% macro active_filters__item(text) %}
+<div class="active-filters__item">{{ text }} <i class="material-icons active-filters__handle">close</i></div>
+{% endmacro %}
+
+{% macro footer_column() %}
+<div class="column medium-3 small-6">
+  <h3>Footer Title</h3>
+  <ul>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Lorem ipsum dolor sit amet</li>
+    <li>Lorem ipsum dolor sit amet</li>
+  </ul>
+</div>
+{% endmacro %}
