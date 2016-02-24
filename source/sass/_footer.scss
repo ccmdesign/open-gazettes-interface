@@ -17,8 +17,18 @@
     }
 
     li {
-        color: rgba($white, .9);
+        color: rgba($white, .6);
         list-style-type: none;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    a:hover { 
+        color: $white;
+        text-decoration: underline; 
     }
 }
 
