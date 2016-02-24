@@ -10,21 +10,23 @@
 {% macro gazette_boxes(dark=false) %}
 <div class="slider__item">
   <div class="row">
-{{ gazette_box('gb', dark=dark) }}
-{{ gazette_box('ie', dark=dark) }}
+{{ gazette_box('gb', classification=null, dark=dark) }}
+{{ gazette_box('ie', text='Short text', dark=dark) }}
 {{ gazette_box('es', dark=dark) }}
 {{ gazette_box('lu', dark=dark) }}
   </div>
 </div>
 {% endmacro %}
 
-{% macro gazette_box(code, dark=false, end=false) %}
+{% macro gazette_box(code, text='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?', classification='Dissolution', dark=false, end=false) %}
 <div class="medium-6 column{% if end %} end{% endif %}">
   <div class="gazette-box{% if dark %} gazette-box--negative{% endif %}">
     <h2>Gazette Name</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
+    <p>{{ text }}</p>
     <div class="gazette-box__controls">
-      <div class="gazette-box__category">Dissolution</div>
+{% if classification %}
+      <div class="gazette-box__category">{{ classification }}</div>
+{% endif %}
       <img class="gazette-box__flag" src="{{ image_path(code + '-flag.svg') }}" alt="">
       <span class="gazette-box__pub-date">2 days ago</span>
     </div>
