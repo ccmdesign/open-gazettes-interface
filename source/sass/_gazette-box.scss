@@ -23,6 +23,7 @@
     background-color: rgba($dark-blue, .1);
     font-size: .9rem;
     margin-top: 30px;
+    overflow: hidden;
 }
 
 .gazette-box__category { // NOTE: This might be redundant with the gazette-category
