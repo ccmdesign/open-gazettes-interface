@@ -1,9 +1,13 @@
 {% macro image_path(path) %}images/{{ path }}{% endmacro %}
 
-{% macro flag_item(code, name) %}
+{% macro flag_item(code, name, link=false) %}
 <li class="flag-item">
   <div class="flag-item__rounded" style="background-image: url({{ image_path(code + '-flag.svg') }})"></div>
+{% if link %}
+  <a href="#" class="flag-item__country-name">{{ name }}</a>
+{% else %}
   <span class="flag-item__country-name">{{ name }}</span>
+{% endif %}
 </li>
 {% endmacro %}
 
@@ -12,16 +16,18 @@
   <div class="row">
 {{ gazette_box('gb', classification=null, dark=dark) }}
 {{ gazette_box('ie', text='Short text', dark=dark) }}
-{{ gazette_box('es', dark=dark) }}
+{{ gazette_box('es', title=null, dark=dark) }}
 {{ gazette_box('lu', dark=dark) }}
   </div>
 </div>
 {% endmacro %}
 
-{% macro gazette_box(code, text='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?', classification='Dissolution', dark=false, end=false) %}
+{% macro gazette_box(code, title='Gazette Name', text='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?', classification='Dissolution', dark=false, end=false) %}
 <div class="medium-6 column{% if end %} end{% endif %}">
   <div class="gazette-box{% if dark %} gazette-box--negative{% endif %}">
-    <h2>Gazette Name</h2>
+{% if title %}
+    <h2>{{ title }}</h2>
+{% endif %}
     <p>{{ text }}</p>
     <div class="gazette-box__controls">
 {% if classification %}
@@ -89,8 +95,8 @@
 <div class="column medium-3 small-6">
   <h3>Footer Title</h3>
   <ul>
-    <li>Lorem ipsum dolor sit amet</li>
-    <li>Lorem ipsum dolor sit amet</li>
+    <li><a href="#">Link</a></li>
+    <li><a href="https://www.facebook.com">Visited link</a></li>
     <li>Lorem ipsum dolor sit amet</li>
     <li>Lorem ipsum dolor sit amet</li>
   </ul>
