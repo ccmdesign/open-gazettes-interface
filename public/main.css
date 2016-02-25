@@ -124,6 +124,9 @@ a:visited {
   .pagination--last .material-icons {
     vertical-align: -5px; }
 
+.pagination--current-page {
+  font-weight: bold; }
+
 .pagination--first .material-icons:first-child {
   margin-right: -21px; }
 
@@ -370,7 +373,8 @@ a:visited {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); }
 
 .flag-item__country-name {
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none; }
 
 .flag-item:hover .flag-item__country-name {
   color: black; }
