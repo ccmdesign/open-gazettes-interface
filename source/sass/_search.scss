@@ -8,14 +8,15 @@
     input[type="search"] {
         display: table-cell;
         width: calc(100% - 60px);
-        
         border: 0;
-        padding: 25px;
         font-size: 1.4rem;
+        color: $black;
         color: rgba($black, .5);
-
         box-shadow: 0 0 0 0;
         background-color: rgba($teal, .2);
+
+        height: 50px;
+        padding: 10px 20px;
 
         &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
           color: rgba($black, .5);
@@ -29,7 +30,20 @@
         &:-moz-placeholder { /* Firefox 18- */
           color: rgba($black, .5);
         }
+
+        -moz-box-sizing: border-box;
         
+    }
+
+    input::-moz-placeholder {
+      color: black;
+    }
+    input:-moz-placeholder {
+      color: green;
+    }
+
+    input::value {
+        color: black;
     }
 
     input[type="submit"] {
