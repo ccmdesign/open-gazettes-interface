@@ -10,8 +10,6 @@
     display: block;
     text-decoration: none;
 
-    &:visited { color: $white; }
-
     h2 {
         font-size: 1.3rem;
         font-weight: 400;
@@ -68,6 +66,7 @@
 .gazette-box--negative {
     background-color: rgba($white, .1);
     color: rgba($white, .8);
+    &:visited { color: $white; }
 
     .gazette-box__controls { 
         background-color: rgba($white, .1);
