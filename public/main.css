@@ -255,8 +255,14 @@ a:visited {
   .footer ul {
     padding-left: 0; }
   .footer li {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.6);
     list-style-type: none; }
+  .footer a {
+    color: white;
+    text-decoration: none; }
+  .footer a:hover {
+    color: white;
+    text-decoration: underline; }
 
 .footer__logo {
   max-width: 200px;
@@ -301,11 +307,14 @@ a:visited {
     display: table-cell;
     width: calc(100% - 60px);
     border: 0;
-    padding: 25px;
     font-size: 1.4rem;
+    color: black;
     color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 0 0;
-    background-color: rgba(24, 111, 124, 0.2); }
+    background-color: rgba(24, 111, 124, 0.2);
+    height: 50px;
+    padding: 10px 20px;
+    -moz-box-sizing: border-box; }
     .main-search-field input[type="search"]::-webkit-input-placeholder {
       /* Chrome/Opera/Safari */
       color: rgba(0, 0, 0, 0.5); }
@@ -318,6 +327,12 @@ a:visited {
     .main-search-field input[type="search"]:-moz-placeholder {
       /* Firefox 18- */
       color: rgba(0, 0, 0, 0.5); }
+  .main-search-field input::-moz-placeholder {
+    color: black; }
+  .main-search-field input:-moz-placeholder {
+    color: green; }
+  .main-search-field input::value {
+    color: black; }
   .main-search-field input[type="submit"] {
     display: table-cell;
     vertical-align: top;
@@ -363,11 +378,18 @@ a:visited {
 .gazette-box {
   background-color: rgba(33, 60, 79, 0.1);
   color: rgba(33, 60, 79, 0.8);
-  margin: 15px 0; }
+  margin: 15px 0;
+  padding: 20px 0 0;
+  height: 225px;
+  position: relative;
+  display: block;
+  text-decoration: none; }
+  .gazette-box:visited {
+    color: white; }
   .gazette-box h2 {
     font-size: 1.3rem;
     font-weight: 400;
-    padding: 20px 20px 0 20px;
+    padding: 0 20px 0 20px;
     margin: 0; }
   .gazette-box p {
     padding: 0 20px;
@@ -377,7 +399,11 @@ a:visited {
 .gazette-box__controls {
   background-color: rgba(33, 60, 79, 0.1);
   font-size: .9rem;
-  margin-top: 30px; }
+  margin-top: 30px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
 
 .gazette-box__category {
   margin: 5px 5px 5px 20px;
