@@ -4,12 +4,20 @@
     background-color: rgba($dark-blue, .1);
     color: rgba($dark-blue, .8);
     margin: 15px 0;
+    padding: 20px 0 0;
+    height: 225px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+
+    &:visited { color: $white; }
 
     h2 {
         font-size: 1.3rem;
         font-weight: 400;
-        padding: 20px 20px 0 20px;
+        padding: 0 20px 0 20px;
         margin: 0;
+
     }
 
     p {
@@ -24,6 +32,9 @@
     font-size: .9rem;
     margin-top: 30px;
     overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .gazette-box__category { // NOTE: This might be redundant with the gazette-category
@@ -36,7 +47,6 @@
     font-weight: 400;
     font-size: .8rem;
     text-transform: uppercase;
-
 }
 
 .gazette-box__pub-date {
