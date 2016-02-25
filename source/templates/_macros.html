@@ -14,7 +14,7 @@
 {% macro gazette_boxes(dark=false) %}
 <div class="slider__item">
   <div class="row">
-{{ gazette_box('gb', classification=null, dark=dark) }}
+{{ gazette_box('gb', classification=null, visited=true, dark=dark) }}
 {{ gazette_box('ie', text='Short text', dark=dark) }}
   </div>
   <div class="row">
@@ -24,9 +24,9 @@
 </div>
 {% endmacro %}
 
-{% macro gazette_box(code, title='Gazette Name', text='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?', classification='Dissolution', dark=false, end=false) %}
+{% macro gazette_box(code, title='Gazette Name', text='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, ipsa quidem harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?', classification='Dissolution', visited=false, dark=false, end=false) %}
 <div class="medium-6 column{% if end %} end{% endif %}">
-  <a href="#" class="gazette-box{% if dark %} gazette-box--negative{% endif %}">
+  <a href="{% if visited %}https://www.facebook.com{% else %}#{% endif %}" class="gazette-box{% if dark %} gazette-box--negative{% endif %}">
 {% if title %}
     <h2>{{ title }}</h2>
 {% endif %}
