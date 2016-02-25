@@ -388,8 +388,6 @@ a:visited {
   position: relative;
   display: block;
   text-decoration: none; }
-  .gazette-box:visited {
-    color: white; }
   .gazette-box h2 {
     font-size: 1.3rem;
     font-weight: 400;
@@ -434,6 +432,8 @@ a:visited {
 .gazette-box--negative {
   background-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.8); }
+  .gazette-box--negative:visited {
+    color: white; }
   .gazette-box--negative .gazette-box__controls {
     background-color: rgba(255, 255, 255, 0.1); }
   .gazette-box--negative .gazette-box__pub-date {
