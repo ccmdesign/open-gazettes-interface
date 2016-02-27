@@ -529,14 +529,25 @@ a:visited {
   .company-info__sponsor {
     color: rgba(0, 0, 0, 0.6);
     font-size: .9rem; }
+  .company-info__oc-logo {
+    max-width: 260px;
+    margin-bottom: 30px; }
   .company-info__panel-left {
-    text-align: right;
     font-weight: 500; }
+    @media (min-width: 40em) {
+      .company-info__panel-left {
+        text-align: right; } }
   .company-info__panel-center {
     text-align: center; }
   .company-info__panel-left p, .company-info__panel-right p {
     margin-bottom: .5rem;
     margin-top: .5rem; }
+  @media (max-width: 640px) {
+    .company-info__panel-left p {
+      margin-bottom: 0; } }
+  @media (max-width: 640px) {
+    .company-info__panel-right p {
+      margin-top: 0; } }
 
 .company-source {
   background-color: rgba(0, 0, 0, 0.1); }
