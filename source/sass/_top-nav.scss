@@ -1,24 +1,24 @@
 // Top Nav
 .top-nav {
     background-color: $teal;
-}
 
-.top-nav__item {
-    @extend .u-button;
-    color: rgba($white, .8);
-
-    &:visited {
+    &__item {
+        @extend .u-button;
         color: rgba($white, .8);
+
+        &:visited {
+            color: rgba($white, .8);
+        }
     }
-}
 
-.top-nav__open-corporates {
-    color: rgba($white, .4);
-    padding: 15px 0;
-    text-align: right;
+    &__open-corporates {
+        color: rgba($white, .4);
+        padding: 15px 0;
+        text-align: right;
 
-    img {
-        width: 130px;
-        margin-left: 5px;
+        img {
+            width: 130px;
+            margin-left: 5px;
+        }
     }
 }

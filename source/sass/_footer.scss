@@ -30,12 +30,14 @@
         color: $white;
         text-decoration: underline; 
     }
-}
 
-.footer__logo {
-    max-width: 200px;
-    opacity: .4;
-    margin: 0 auto 30px;
+
+    &__logo {
+        max-width: 200px;
+        opacity: .4;
+        margin: 0 auto 30px;
+    }
+
 }
 
 .copyright-information {

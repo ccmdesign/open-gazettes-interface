@@ -1,8 +1,8 @@
 // Colors
 
-$teal: hsla(188deg,68%,29%, 1);
-$dark-blue: hsla(205deg,41%,22%, 1);
-$orange: hsla(34deg,91%,55%, 1);
+$teal: hsla(188deg, 68%, 29%, 1);
+$dark-blue: hsla(205deg, 41%, 22%, 1);
+$orange: hsla(34deg, 91%, 55%, 1);
 $red: hsla(0deg, 100%, 36%, 1);
 
 $black: hsla(0deg, 0%, 0%, 1);
@@ -17,25 +17,25 @@ $signika: 'Signika', sans-serif;
 
 // Imports
 
-@import "reset";
-@import "breakpoint";
-@import "slider";
-@import "utilities";
-@import "pagination";
-@import "page-section";
-@import "call-to-action";
-@import "buttons";
-@import "footer";
-@import "top-nav";
-@import "search";
-@import "flags";
-@import "gazette-box";
-@import "filters";
-@import "use-cases";
+@import 'reset';
+@import 'breakpoint';
+@import 'slider';
+@import 'utilities';
+@import 'pagination';
+@import 'page-section';
+@import 'call-to-action';
+@import 'buttons';
+@import 'footer';
+@import 'top-nav';
+@import 'search';
+@import 'flags';
+@import 'gazette-box';
+@import 'filters';
+@import 'use-cases';
 
 // Page specific Modules
-@import "gazette-page";
-@import "company-info";
-@import "results";
-@import "homepage";
-@import "sandbox";
+@import 'gazette-page';
+@import 'company-info';
+@import 'results';
+@import 'homepage';
+@import 'sandbox';

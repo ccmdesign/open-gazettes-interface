@@ -1,44 +1,45 @@
 .filter-panel {
     padding: 30px 0 40px;
     background-color: rgba($teal, .2);
-}
 
-.filter-panel__item {
-    vertical-align: middle;
-    color: rgba($black, .8);
-    font-weight: 300;
-}
+    &__item {
+        vertical-align: middle;
+        color: rgba($black, .8);
+        font-weight: 300;
+    }
 
-.filter-panel--title {
-    font-size: 1rem;
-    font-weight: 600;
-    color: $teal;
-}
+    &--title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $teal;
+    }
 
-.filter-panel__checkbox {
-    margin: 0;
-}
+    &__checkbox {
+        margin: 0;
+    }
 
-.filter-panel__date {
-    width: 40%;
-    display: inline-block;
-}
+    &__date {
+        width: 40%;
+        display: inline-block;
+    }
 
-.filter-panel-submit {
-    background-color: $teal;
-    padding: 20px 0;
-    text-align: center;
+    &-submit {
+        background-color: $teal;
+        padding: 20px 0;
+        text-align: center;
 
-    // This should be a singel selector. Probably a button--modifier
-    .button {
-        background-color: darken($teal, 5);
-        font-size: 1.3rem;
-        padding: 8px 80px;
+        // This should be a singel selector. Probably a button--modifier
+        .button {
+            background-color: darken($teal, 5);
+            font-size: 1.3rem;
+            padding: 8px 80px;
 
-        &:hover {
-            background-color: darken($teal, 8);
+            &:hover {
+                background-color: darken($teal, 8);
+            }
         }
     }
+
 }
 
 

@@ -11,27 +11,27 @@
     display: inline-block;
     width: 15%;
     cursor: pointer;
-}
 
-.flag-item__rounded {
-    @extend .u-circle;
-    width: 60px;
-    height: 60px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 15px;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 4px rgba($black, .2);
-}
+    &__rounded {
+        @extend .u-circle;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 15px;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 0 4px rgba($black, .2);
+    }
 
-.flag-item__country-name {
-    color: rgba($black, .5);
-    text-decoration: none;
-}
+    &__country-name {
+        color: rgba($black, .5);
+        text-decoration: none;
+    }
 
-.flag-item:hover {
-    .flag-item__country-name {
-        color: rgba($black, 1);       
+    &:hover {
+        .flag-item__country-name {
+            color: rgba($black, 1);       
+        }
     }
 }

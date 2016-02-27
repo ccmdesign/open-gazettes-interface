@@ -1,65 +1,65 @@
 .pagination { 
     margin-top: 30px;
     text-align: center;
-}
 
-.pagination__item {
-// The vertical alignment for these items is too tricky and fragile
-// Also, the alignment should be 1px to the bottom;
+    &__item {
+    // The vertical alignment for these items is too tricky and fragile
+    // Also, the alignment should be 1px to the bottom;
 
-    text-decoration: none;
-    vertical-align: top;
-    display: inline-block;
-    padding: 2px 10px 0px;
-    margin-left: -2px;
-    margin-right: -2px;
-    vertical-align: top;
+        text-decoration: none;
+        vertical-align: top;
+        display: inline-block;
+        padding: 2px 10px 0px;
+        margin-left: -2px;
+        margin-right: -2px;
+        vertical-align: top;
 
 
-    &:hover {
-        background-color: rgba($teal, .1);
+        &:hover {
+            background-color: rgba($teal, .1);
+        }
     }
-}
 
-.pagination--first,
-.pagination--prev, 
-.pagination--next, 
-.pagination--last {
-    line-height: 1;
-    padding: 2px 0 0 0;
+    &--first,
+    &--prev, 
+    &--next, 
+    &--last {
+        line-height: 1;
+        padding: 2px 0 0 0;
 
-    .material-icons { vertical-align: -5px; }
-} 
+        .material-icons { vertical-align: -5px; }
+    } 
 
-.pagination--current-page {
-    font-weight: bold;
-}
-
-.pagination--first,
-.pagination--last {
-    
-}
-
-.pagination--prev,
-.pagination--next {
-}
-
-.pagination--first {
-    .material-icons:first-child {
-        margin-right: -21px;
+    &--current-page {
+        font-weight: bold;
     }
-}
 
-.pagination--prev {
-    
-}
+    &--first,
+    &--last {
+        
+    }
 
-.pagination--next {
-    
-}
+    &--prev,
+    &--next {
+    }
 
-.pagination--last {
-    .material-icons:last-child {
-        margin-left: -21px;
+    &--first {
+        .material-icons:first-child {
+            margin-right: -21px;
+        }
+    }
+
+    &--prev {
+        
+    }
+
+    &--next {
+        
+    }
+
+    &--last {
+        .material-icons:last-child {
+            margin-left: -21px;
+        }
     }
 }

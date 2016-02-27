@@ -2,50 +2,52 @@
     border-top: 4px solid $red;
     border-bottom: 4px solid $red;
     background-color: rgba($black, .05);
-}
 
-.company-info__title {
-    text-align: center;
-    font-weight: 300;
-    color: rgba($black, .6);
-    margin-bottom: 0;
-}
 
-.company-info__company-name {
-    text-align: center;
-    color: rgba($black, .6);
-    font-weight: 400;
-}
+    &__title {
+        text-align: center;
+        font-weight: 300;
+        color: rgba($black, .6);
+        margin-bottom: 0;
+    }
 
-.company-info__actions {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+    &__company-name {
+        text-align: center;
+        color: rgba($black, .6);
+        font-weight: 400;
+    }
 
-.company-info__sponsor {
-    color: rgba($black, .6);
-    font-size: .9rem;
-}
+    &__actions {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
-.company-info__panel-left {
-    text-align: right;
-    font-weight: 500;
-}
+    &__sponsor {
+        color: rgba($black, .6);
+        font-size: .9rem;
+    }
 
-.company-info__panel-center {
-    text-align: center;
-}
+    &__panel-left {
+        text-align: right;
+        font-weight: 500;
+    }
 
-.company-info__panel-left,
-.company-info__panel-right {
-    p {
-        margin-bottom: .5rem;
-        margin-top: .5rem;
+    &__panel-center {
+        text-align: center;
+    }
+
+    &__panel-left,
+    &__panel-right {
+        p {
+            margin-bottom: .5rem;
+            margin-top: .5rem;
+        }
     }
 }
 
 .company-source {
     background-color: rgba($black, .1);
+
     p {
         margin: .4rem;
         font-size: .9rem;

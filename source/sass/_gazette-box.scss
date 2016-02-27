@@ -23,61 +23,58 @@
         font-size: 1rem;
         font-weight: 300;
     }
-}
-
-.gazette-box__controls {
-    background-color: rgba($dark-blue, .1);
-    font-size: .9rem;
-    margin-top: 30px;
-    overflow: hidden;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.gazette-box__category { // NOTE: This might be redundant with the gazette-category
-    margin: 5px 5px 5px 20px;
-    display: inline-block;
-    padding: 2px 8px 1px;
-    background-color: $red;
-    border-radius: 2px;
-    color: rgba($white, .9);
-    font-weight: 400;
-    font-size: .8rem;
-    text-transform: uppercase;
-}
-
-.gazette-box__pub-date {
-    float: right;
-    margin: 5px 5px 5px 20px;
-    font-style: italic;
-    color: rgba($dark-blue, .4);
-}
-
-.gazette-box__flag {
-    float: right;
-    margin: 0 0 0 10px;
-    height: 32px;
-}
 
 
-// Switching the colors for the Gazette Boxes over dark background
+    &__controls {
+        background-color: rgba($dark-blue, .1);
+        font-size: .9rem;
+        margin-top: 30px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 
-.gazette-box--negative {
-    background-color: rgba($white, .1);
-    color: rgba($white, .8);
-    &:visited { color: $white; }
+    &__category { // NOTE: This might be redundant with the gazette-category
+        margin: 5px 5px 5px 20px;
+        display: inline-block;
+        padding: 2px 8px 1px;
+        background-color: $red;
+        border-radius: 2px;
+        color: rgba($white, .9);
+        font-weight: 400;
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
 
-    .gazette-box__controls { 
+    &__pub-date {
+        float: right;
+        margin: 5px 5px 5px 20px;
+        font-style: italic;
+        color: rgba($dark-blue, .4);
+    }
+
+    &__flag {
+        float: right;
+        margin: 0 0 0 10px;
+        height: 32px;
+    }
+
+
+    // Switching the colors for the Gazette Boxes over dark background
+
+    &--negative {
         background-color: rgba($white, .1);
+        color: rgba($white, .8);
+        &:visited { color: $white; }
+
+        .gazette-box__controls { 
+            background-color: rgba($white, .1);
+        }
+
+        .gazette-box__pub-date {
+            color: rgba($white, .4);
+        }
     }
 
-    .gazette-box__pub-date {
-        color: rgba($white, .4);
-    }
 }
-
-
-
-
-

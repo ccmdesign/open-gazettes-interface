@@ -1,25 +1,25 @@
 .gazette-header {
     margin-top: 20px;
     padding-bottom: 30px;
-}
 
-.gazette-header__panel-right {
-    text-align: right;
-}
+    &__panel-right {
+        text-align: right;
+    }
 
-.gazette-header__title {
-    font-weight: 300;
-    margin-top: 0;
-}
+    &__title {
+        font-weight: 300;
+        margin-top: 0;
+    }
 
-.gazette-header__flag {
-    width: 90px;
-    box-shadow: 0 0 6px rgba($black, .2);
-}
+    &__flag {
+        width: 90px;
+        box-shadow: 0 0 6px rgba($black, .2);
+    }
 
-.gazette-header__pub-date {
-    font-style: italic;
-    color: rgba($black, .5);
+    &__pub-date {
+        font-style: italic;
+        color: rgba($black, .5);
+    }
 }
 
 .gazette-category { // NOTE: This might be redundant with the gazette-box__category
@@ -38,23 +38,25 @@
         list-style-type: none;
         margin-bottom: 10px;
     }
+
+    &__item {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
-.gazette-actions__item {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+
 
 .gazette-info {
     p {
         margin-top: .3rem;
     }
-}
 
-.gazette-info__title {
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 0;
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
 }
 

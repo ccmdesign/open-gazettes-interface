@@ -1,28 +1,26 @@
 // Use Cases
 .use-cases {
-    .use-cases__panel:first-of-type {
+    &__panel:first-of-type {
         text-align: right;
     }    
-}
 
-.use-cases--right {
-    .use-cases__illustration {
-        background-position: right center;
-        background-color: #cccccc;
+    &--right {
+        .use-cases__illustration {
+            background-position: right center;
+            background-color: #cccccc;
+        }
     }
-}
 
+    &__h2 {
+        font-weight: 400;
+        color: darken($teal, 5);
+        
+    }
 
-
-.use-cases__h2 {
-    font-weight: 400;
-    color: darken($teal, 5);
-    
-}
-
-.use-cases__illustration {
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-color: #f2f2f2;
-    background-position: left center;
+    &__illustration {
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-color: #f2f2f2;
+        background-position: left center;
+    }
 }
