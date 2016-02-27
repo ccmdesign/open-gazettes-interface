@@ -14,7 +14,13 @@
     &__h2 {
         font-weight: 400;
         color: darken($teal, 5);
-        
+        margin-top: 0;
+    }
+
+    &__h3 {
+        font-weight: 400;
+        color: rgba($teal, .6);
+        margin-bottom: 0;
     }
 
     &__illustration {
