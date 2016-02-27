@@ -87,7 +87,8 @@
     background-color: $red;
     color: rgba($white, .9);
 
-    &:hover {
+    &:hover,
+    &:visited {
         color: $white;
         background-color: darken($red, 10);
     }
