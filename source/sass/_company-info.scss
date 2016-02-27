@@ -25,11 +25,17 @@
     &__sponsor {
         color: rgba($black, .6);
         font-size: .9rem;
+        
+    }
+
+    &__oc-logo {
+        max-width: 260px;
+        margin-bottom: 30px;
     }
 
     &__panel-left {
-        text-align: right;
         font-weight: 500;
+        @include breakpoint($medium) { text-align: right; }
     }
 
     &__panel-center {
@@ -42,6 +48,14 @@
             margin-bottom: .5rem;
             margin-top: .5rem;
         }
+    }
+
+    &__panel-left p {
+        @include breakpoint($small) { margin-bottom: 0; }
+    }
+
+    &__panel-right p {
+        @include breakpoint($small) { margin-top: 0; }
     }
 }
 
