@@ -93,9 +93,7 @@
 
 {% macro active_filters__item(text) %}
 <div class="active-filters__item">
-  <a href="#">
-    {{ text }} <i class="material-icons active-filters__handle">close</i>
-  </a>
+  {{ text }} <a href="#"><i class="material-icons active-filters__handle">close</i></a>
 </div>
 {% endmacro %}
 
