@@ -186,7 +186,7 @@ a:visited {
     background-color: #213c4f; }
 
 .button--small {
-  padding: 4px 10px 4px 20px;
+  padding: 4px 20px 4px 20px;
   background-color: #186f7c;
   color: rgba(255, 255, 255, 0.8); }
   .button--small .material-icons {
@@ -502,6 +502,17 @@ a:visited {
     padding-top: 10px;
     padding-bottom: 10px; }
 
+.gazette-actions2 {
+  padding: 0; }
+  .gazette-actions2 li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    display: inline-block; }
+  .gazette-actions2__item {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
 .gazette-info p {
   margin-top: .3rem; }
 
@@ -553,6 +564,50 @@ a:visited {
   background-color: rgba(0, 0, 0, 0.1); }
   .company-source p {
     margin: .4rem;
+    font-size: .9rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic; }
+
+.company-info2 {
+  border-top: 4px solid #b80000;
+  border-bottom: 4px solid #b80000;
+  background-color: rgba(0, 0, 0, 0.05); }
+  .company-info2 > * {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .company-info2 strong {
+    font-weight: 400; }
+  .company-info2__title {
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 0; }
+  .company-info2__company-name {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0; }
+  .company-info2__actions {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .company-info2__actions .button:only-child {
+      display: block;
+      text-align: center; }
+  .company-info2__sponsor {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: .9rem;
+    text-align: center; }
+  .company-info2__oc-logo {
+    max-width: 180px;
+    margin: 10px auto 30px; }
+
+.company-source {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-bottom: 15px; }
+  .company-source p {
+    margin: .4rem .4rem 0 .4rem;
     font-size: .9rem;
     text-align: center;
     color: rgba(0, 0, 0, 0.5);
