@@ -618,7 +618,8 @@ a:visited {
   .search-landing__header {
     margin-bottom: 30px; }
   .search-landing__tagline {
-    margin-left: 60px; }
+    margin-left: 60px;
+    margin-top: 38px; }
 
 .results-controls__title {
   font-weight: 400;
