@@ -25,7 +25,6 @@
     &__sponsor {
         color: rgba($black, .6);
         font-size: .9rem;
-        
     }
 
     &__oc-logo {
@@ -64,6 +63,70 @@
 
     p {
         margin: .4rem;
+        font-size: .9rem;
+        text-align: center;
+        color: rgba($black, .5);
+        font-style: italic;
+    }
+}
+
+// ===================================================
+
+.company-info2 {
+    border-top: 4px solid $red;
+    border-bottom: 4px solid $red;
+    background-color: rgba($black, .05);
+    
+    > * {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    strong { font-weight: 400; }
+
+    &__title {
+        font-weight: 300;
+        font-size: 18px;
+        color: rgba($black, .6);
+        margin-bottom: 0;
+    }
+
+    &__company-name {
+        color: rgba($black, .6);
+        font-weight: 400;
+        font-size: 22px;
+        margin: 0;
+    }
+
+    &__actions {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .button:only-child {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__sponsor {
+        color: rgba($black, .6);
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    &__oc-logo {
+        max-width:180px;
+        margin: 10px auto 30px;
+    }
+}
+
+.company-source {
+    background-color: rgba($black, .1);
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+    p {
+        margin: .4rem .4rem 0 .4rem;
         font-size: .9rem;
         text-align: center;
         color: rgba($black, .5);
