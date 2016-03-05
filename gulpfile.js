@@ -71,3 +71,5 @@ gulp.task('watch', ['browserSync', 'sass', 'nunjucks', 'image-dev', 'vendor', 'j
   gulp.watch('source/templates/**/*.html', ['nunjucks']); 
   // Other watchers
 });
+
+gulp.task('default', ['watch']);
