@@ -654,6 +654,8 @@ a:visited {
     color: white;
     padding-left: 10px;
     margin-bottom: 5px; }
+    .active-filters__item > a {
+      color: rgba(255, 255, 255, 0.5); }
   .active-filters__handle {
     font-size: 1rem;
     vertical-align: -3px;

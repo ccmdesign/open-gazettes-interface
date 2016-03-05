@@ -63,6 +63,10 @@
         color: $white;
         padding-left: 10px;
         margin-bottom: 5px;
+
+        > a {
+            color: rgba($white, .5);
+        }
     }
 
     &__handle {
