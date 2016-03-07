@@ -48,9 +48,7 @@
 
     }
 
-    &--active-view {
-        color: $teal;
-    }
+    .js-is-active { color: $teal; }
 }
 
 .active-filters {

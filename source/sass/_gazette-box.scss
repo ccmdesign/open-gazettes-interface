@@ -2,7 +2,6 @@
 
 .gazette-box {
     background-color: rgba($dark-blue, .1);
-    color: rgba($dark-blue, .8);
     margin: 15px 0;
     padding: 20px 0 0;
     height: 225px;
@@ -66,7 +65,9 @@
 
     &--negative {
         background-color: rgba($white, .1);
-        color: rgba($white, .8);
+        
+        h2, p { color: rgba($white, .8); }
+
         &:visited { color: $white; }
 
         .gazette-box__controls { 
@@ -79,3 +80,46 @@
     }
 
 }
+
+
+.results-list.js-is-list {
+  .medium-6 { width: 100%; } // Overiding foundation styles for this list view
+
+  .gazette-box {
+    padding: 10px 0 0;
+    margin: 5px 0;
+    text-decoration: none;
+    position: relative;
+    border-top: 1px solid rgba($dark-blue, .2);
+    height: auto;
+    background-color: transparent;
+
+    h2 {
+        font-size: 1.1rem;
+        padding: 0;
+    }
+
+    p {
+        padding: 0;
+        margin: 10px 0 5px;
+        font-size: .9rem;
+    }
+
+    &__controls {
+        background-color: transparent;
+        position: static;
+        margin: 0;
+    }
+
+    &__category { // NOTE: This might be redundant with the gazette-category
+        margin: 5px 0;
+    }
+
+    &__flag {
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
+  }
+}
+

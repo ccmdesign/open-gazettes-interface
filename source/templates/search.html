@@ -70,8 +70,8 @@
           <option value="">Sort by Jurisdiction</option>
         </select>
 
-        <div class="results-controls__view-switcher"><i class="material-icons">view_list</i></div>
-        <div class="results-controls__view-switcher results-controls--active-view"><i class="material-icons">view_module</i></div>
+        <div class="results-controls__view-switcher js-view-list-trigger"><i class="material-icons">view_list</i></div>
+        <div class="results-controls__view-switcher js-view-grid-trigger results-controls--active-view"><i class="material-icons">view_module</i></div>
       </div>
     </form>
   </div>
@@ -87,7 +87,7 @@
     </div>
   </div>
 
-  <div class="results-list">
+  <div class="results-list js-results-list">
     <div class="row">
 {{ macros.gazette_box('gb', visited=true) }}
 {{ macros.gazette_box('ie') }}
