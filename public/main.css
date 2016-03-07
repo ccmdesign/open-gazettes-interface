@@ -389,7 +389,6 @@ a:hover {
 
 .gazette-box {
   background-color: rgba(33, 60, 79, 0.1);
-  color: rgba(33, 60, 79, 0.8);
   margin: 15px 0;
   padding: 20px 0 0;
   height: 225px;
@@ -435,14 +434,44 @@ a:hover {
     margin: 0 0 0 10px;
     height: 32px; }
   .gazette-box--negative {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.8); }
+    background-color: rgba(255, 255, 255, 0.1); }
+    .gazette-box--negative h2, .gazette-box--negative p {
+      color: rgba(255, 255, 255, 0.8); }
     .gazette-box--negative:visited {
       color: white; }
     .gazette-box--negative .gazette-box__controls {
       background-color: rgba(255, 255, 255, 0.1); }
     .gazette-box--negative .gazette-box__pub-date {
       color: rgba(255, 255, 255, 0.4); }
+
+.results-list.js-is-list .medium-6 {
+  width: 100%; }
+
+.results-list.js-is-list .gazette-box {
+  padding: 10px 0 0;
+  margin: 5px 0;
+  text-decoration: none;
+  position: relative;
+  border-top: 1px solid rgba(33, 60, 79, 0.2);
+  height: auto;
+  background-color: transparent; }
+  .results-list.js-is-list .gazette-box h2 {
+    font-size: 1.1rem;
+    padding: 0; }
+  .results-list.js-is-list .gazette-box p {
+    padding: 0;
+    margin: 10px 0 5px;
+    font-size: .9rem; }
+  .results-list.js-is-list .gazette-box__controls {
+    background-color: transparent;
+    position: static;
+    margin: 0; }
+  .results-list.js-is-list .gazette-box__category {
+    margin: 5px 0; }
+  .results-list.js-is-list .gazette-box__flag {
+    position: absolute;
+    top: 5px;
+    right: 0; }
 
 .filter-panel {
   padding: 30px 0 40px;
@@ -677,7 +706,7 @@ a:hover {
   .results-controls__view-switcher:hover {
     background-color: rgba(0, 0, 0, 0.05); }
 
-.results-controls--active-view {
+.results-controls .js-is-active {
   color: #186f7c; }
 
 .active-filters {
