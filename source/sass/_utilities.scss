@@ -50,3 +50,66 @@
   pointer-events: none;
   opacity: .4;
 }
+
+.u-search-field {
+  display: table;
+  width: 100%;
+
+  form {  display: table-row; }
+
+  input[type="search"] {
+    display: table-cell;
+    width: 80%;
+    border: 0;
+    height: 30px;
+    
+    color: $black;
+    color: rgba($black, .5);
+    box-shadow: 0 0 0 0;
+    background-color: rgba($teal, .2);
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: rgba($black, .5);
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: rgba($black, .5);
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: rgba($black, .5);
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: rgba($black, .5);
+      }
+
+      -moz-box-sizing: border-box;
+        
+    }
+
+    input::-moz-placeholder {
+      color: $black;
+    }
+    input:-moz-placeholder {
+      color: green;
+    }
+
+    input::value {
+      color: $black;
+    }
+
+    input[type="submit"] {
+      display: table-cell;
+      vertical-align: top;
+      padding: 0;
+      border: 0;
+      height: 30px;
+      @extend .u-material-icons;
+      
+      background-color: rgba($white, .2);
+      color: $white;
+      width: 20%;
+
+      &:hover {
+        background-color: rgba($white, .4);
+      }
+    }
+}

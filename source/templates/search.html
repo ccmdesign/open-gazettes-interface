@@ -1,5 +1,9 @@
 {% import '_macros.html' as macros %}
 {% extends '_base.html' %}
+{% block header %}
+    {{ macros.branded_header(search=false) }} 
+{% endblock %}
+
 {% block main %}
 
 <section class="page-section search-landing">

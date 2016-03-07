@@ -1,0 +1,35 @@
+// Branded Header
+
+.branded-header {
+    background-color: $dark-blue;
+    padding: 15px 0 0;
+
+    &__logo {
+        padding: 0 20px 10px;
+    }
+
+    &--align-right {
+        text-align: right;
+    }
+
+    &__search {
+        margin: 0 auto 0 10px;
+        display: inline-block;
+        width: 80%;
+        @extend .u-search-field;
+    }
+
+    &__login,
+    &__login:visited {
+        @extend .u-material-icons;
+        color: rgba($white, .3);
+        font-size: 1.8rem;
+        vertical-align: middle;
+
+        @include breakpoint(68em) {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+        }
+    }
+}

@@ -11,14 +11,12 @@ body {
     font-weight: 300;
 }
 
-a {
+a,
+a:visited {
     color: $teal;
+    text-decoration: none;
 }
 
 a:hover {
     color: $orange;
-}
-
-a:visited {
-    color: $dark-blue;
 }
