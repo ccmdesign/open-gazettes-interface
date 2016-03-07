@@ -68,6 +68,7 @@ gulp.task('nunjucks', function() {
 
 gulp.task('watch', ['browserSync', 'sass', 'nunjucks', 'image-dev', 'vendor', 'js-dev'], function (){
   gulp.watch('source/sass/**/*.scss', ['sass']); 
+  gulp.watch('source/static/scripts.js', ['js-dev']); 
   gulp.watch('source/templates/**/*.html', ['nunjucks']); 
   // Other watchers
 });
