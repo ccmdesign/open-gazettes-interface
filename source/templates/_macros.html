@@ -128,4 +128,14 @@
 </section>
 {% endmacro %}
 
+{% macro alert_message(type) %}
 
+<section class="alert-message alert-message--{{ type }}">
+  <div class="row">
+    <div class="column small-1"><div class="alert-message__icon"></div></div>
+    <div class="column small-11">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nostrum temporibus similique, quod sequi harum blanditiis beatae eaque inventore praesentium hic soluta quaerat incidunt, facere amet, asperiores excepturi corporis illo.</p>
+    </div>
+  </div>
+</section>
+{% endmacro %}

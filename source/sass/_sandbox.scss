@@ -1,0 +1,35 @@
+.alert-message {
+  background-color: rgba($black, .1);
+  font-size: .9rem;
+
+  &__icon {
+    @extend .u-material-icons;
+    font-size: 2.2rem;
+    margin: 15px;
+
+  }
+
+  &--success { 
+    background-color: rgba(green, .1);
+
+    .alert-message__icon { color: green; }
+    .alert-message__icon:after { content: '\E5CA' }
+  }
+
+  &--error { 
+    background-color: rgba(red, .1);
+    
+    .alert-message__icon { color: red; }
+    .alert-message__icon:after { content: '\E001' }
+  }
+
+  &--warning { 
+    background-color: rgba(orange, .1);
+    
+    .alert-message__icon { color: orange; }
+    .alert-message__icon:after { content: '\E002' }
+  }
+}
+
+
+
