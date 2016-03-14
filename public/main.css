@@ -52,7 +52,8 @@ a:hover {
 .slider--dark .slick-arrow:after {
   color: rgba(255, 255, 255, 0.2); }
 
-.u-material-icons, .slider .slick-arrow:before, .slider .slick-arrow:after, .u-search-field input[type="submit"], .branded-header__search input[type="submit"], .main-search-field input[type="submit"], .branded-header__login, .branded-header__login:visited {
+.u-material-icons, .slider .slick-arrow:before, .slider .slick-arrow:after, .u-search-field input[type="submit"], .branded-header__search input[type="submit"], .main-search-field input[type="submit"], .branded-header__login, .branded-header__login:visited, .login,
+.login:visited {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -345,12 +346,20 @@ a:hover {
       width: 130px;
       margin-left: 5px; }
 
-.login {
-  position: absolute;
-  right: 20px;
-  top: 15px;
+.login,
+.login:visited {
+  font-size: 1.8rem;
   width: 50px;
-  height: 40px; }
+  height: 40px;
+  vertical-align: middle;
+  margin: 5px 0 0; }
+  @media (min-width: 70em) {
+    .login,
+    .login:visited {
+      position: absolute;
+      margin: 0;
+      right: 20px;
+      top: 15px; } }
 
 .top-nav .login {
   color: rgba(255, 255, 255, 0.3); }
