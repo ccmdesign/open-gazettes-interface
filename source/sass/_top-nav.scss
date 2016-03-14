@@ -23,13 +23,24 @@
     }
 }
 
-.login {
-    position: absolute;
-    right: 20px;
-    top: 15px;
+.login,
+.login:visited {
+    @extend .u-material-icons;
+    font-size: 1.8rem;
     width: 50px;
     height: 40px;
+    vertical-align: middle;
+    margin: 5px 0 0;
+
+    @include breakpoint(70em) {
+        position: absolute;
+        margin: 0;
+        right: 20px;
+        top: 15px;
+    }
 }
+
+
 
 .top-nav .login { color: rgba($white, .3);}
 .top-nav .login:hover { color: rgba($white, 1);}
