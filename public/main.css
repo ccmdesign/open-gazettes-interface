@@ -53,7 +53,7 @@ a:hover {
   color: rgba(255, 255, 255, 0.2); }
 
 .u-material-icons, .slider .slick-arrow:before, .slider .slick-arrow:after, .u-search-field input[type="submit"], .branded-header__search input[type="submit"], .main-search-field input[type="submit"], .branded-header__login, .branded-header__login:visited, .login,
-.login:visited {
+.login:visited, .alert-message__icon {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -758,3 +758,28 @@ a:hover {
 
 .homepage__tagline {
   margin-bottom: 30px; }
+
+.alert-message {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: .9rem; }
+  .alert-message__icon {
+    font-size: 2.2rem;
+    margin: 15px; }
+  .alert-message--success {
+    background-color: rgba(0, 128, 0, 0.1); }
+    .alert-message--success .alert-message__icon {
+      color: green; }
+    .alert-message--success .alert-message__icon:after {
+      content: '\E5CA'; }
+  .alert-message--error {
+    background-color: rgba(255, 0, 0, 0.1); }
+    .alert-message--error .alert-message__icon {
+      color: red; }
+    .alert-message--error .alert-message__icon:after {
+      content: '\E001'; }
+  .alert-message--warning {
+    background-color: rgba(255, 165, 0, 0.1); }
+    .alert-message--warning .alert-message__icon {
+      color: orange; }
+    .alert-message--warning .alert-message__icon:after {
+      content: '\E002'; }
