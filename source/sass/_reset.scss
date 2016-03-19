@@ -3,7 +3,11 @@ input[type="text"],
 input[type="password"],
 input[type="submit"],
 input[type="email"],
-input[type="search"] { border-radius: 0; }
+input[type="search"],
+textarea { 
+  border-radius: 0; 
+  box-shadow: none;
+}
 
 
 body {

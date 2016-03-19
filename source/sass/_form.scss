@@ -1,0 +1,35 @@
+.form {
+  padding: 30px 0;
+
+  &__label {
+    font-size: 1rem;
+    font-weight: 100;
+    color: rgba($dark-blue, .8);
+  }
+
+  &__input {
+    border: 0;
+    background-color: rgba($dark-blue, .1);
+
+    &:focus {
+      border: 0;
+      background-color: rgba($dark-blue, .2);
+      box-shadow: none;
+    }
+  } 
+
+  &__textarea {
+    border: 0;
+    background-color: rgba($dark-blue, .1);
+    min-height: 200px;
+    max-height: 200px;
+
+    &:focus {
+      border: 0;
+      background-color: rgba($dark-blue, .2);
+      box-shadow: none;
+    }
+  }
+
+
+}
