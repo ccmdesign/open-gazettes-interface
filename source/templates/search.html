@@ -89,11 +89,26 @@
 
   <div class="results-list js-results-list">
     <div class="row">
-{{ macros.gazette_box('gb', visited=true) }}
-{{ macros.gazette_box('ie') }}
-{{ macros.gazette_box('es') }}
-{{ macros.gazette_box('lu') }}
-{{ macros.gazette_box('be', end=true) }}
+      <!-- Hacked Gazette Box -->
+      <div class="medium-6 column">
+        <a href="https://www.facebook.com" class="gazette-box">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit amet sit amet amet.</h2>
+          <p>Lorem ipsum dolor sit amet, <span class="highlighted">consectetur adipisicing</span> elit. Consequatur pariatur recusandae molestiae, harum nisi, soluta illum harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?</p>
+          <div class="gazette-box__controls">
+            <div class="gazette-box__category">Dissolution</div>
+            <img class="gazette-box__flag" src="images/ie-flag.svg" alt="">
+            <span class="gazette-box__pub-date">2 days ago</span>
+          </div>
+        </a>
+      </div>
+      <!-- End of Hacked Gazette Box -->
+
+      {{ macros.gazette_box('es') }}
+      {{ macros.gazette_box('lu') }}
+      {{ macros.gazette_box('lu') }}
+      {{ macros.gazette_box('lu') }}
+      {{ macros.gazette_box('lu') }}
+      {{ macros.gazette_box('be', end=true) }}
     </div>
   </div>
   <div class="row">
