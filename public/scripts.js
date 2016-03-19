@@ -38,4 +38,26 @@ $(document).ready(function() {
       }
     ]
   });
+
+  // Modal Window Logic
+  // This can be better written, abstracted, etc.
+
+  $('.js-modal-window-open').click(function(){
+    $('.js-modal-window').addClass('js-is-active');
+    $('.js-overlay').addClass('js-is-active');
+    $('body').addClass('overlay--active');
+  });
+
+  $('.js-modal-window-close').click(function(){
+    $('.js-modal-window').removeClass('js-is-active');
+    $('.js-overlay').removeClass('js-is-active');
+    $('body').removeClass('overlay--active');
+  });
+
+  $('.js-overlay').click(function(){
+    $('.js-modal-window').removeClass('js-is-active');
+    $('.js-overlay').removeClass('js-is-active');
+    $('body').removeClass('overlay--active');
+  });
+
 });
