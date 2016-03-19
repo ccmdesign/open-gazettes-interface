@@ -34,8 +34,10 @@ $signika: 'Signika', sans-serif;
 @import 'top-nav';
 @import 'search';
 @import 'flags';
-@import 'gazette-box';
+
+@import 'gazette-item';
 @import 'filters';
+@import 'alert-messages';
 @import 'use-cases';
 
 // Page specific Modules
