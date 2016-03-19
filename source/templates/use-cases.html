@@ -1,14 +1,25 @@
 {% import '_macros.html' as macros %}
 {% extends '_base.html' %}
 {% block main %}
+<div class="page-section all-use-cases">
+  <div class="row">
+    <div class="large-10 large-centered">
+      <img src="images/use-cases-all.jpg" alt="">
+      <div class="all-use-cases__explanation">
+        <h2 class="use-cases__h2">Use Case - Bank Employee</h2>
+        <p>We will have some quick explanation about each use case in this menu. The hive-like thing above will be the use-case navigation menu. Beatae dignissimos earum molestias dolore. Dolore ullam, omnis blanditiis id veritatis iste.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% set side = cycler('left', 'right') %}
 
 
-{{ macros.use_cases(side.next(), 'use-case-1.jpg') }}
-{{ macros.use_cases(side.next(), 'use-case-2.jpg') }}
-{{ macros.use_cases(side.next(), 'use-case-1.jpg') }}
-{{ macros.use_cases(side.next(), 'use-case-2.jpg') }}
-{{ macros.use_cases(side.next(), 'use-case-1.jpg') }}
+{{ macros.use_cases(side.next(), 'use-case-3.png') }}
+{{ macros.use_cases(side.next(), 'use-case-3.png') }}
+{{ macros.use_cases(side.next(), 'use-case-3.png') }}
+{{ macros.use_cases(side.next(), 'use-case-3.png') }}
+{{ macros.use_cases(side.next(), 'use-case-3.png') }}
 
 {% endblock %}

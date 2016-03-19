@@ -1,18 +1,18 @@
 // Use Cases
+.all-use-cases__explanation {
+    text-align: center;
+}
+
 .use-cases {
+    &:nth-of-type(2n) {
+        background-color: #efefef;
+    }
     &__panel:first-of-type {
         text-align: right;
-    }    
-
-    &--right {
-        .use-cases__illustration {
-            background-position: right center;
-            background-color: #cccccc;
-        }
     }
 
     &__h2 {
-        font-weight: 400;
+        font-weight: 200;
         color: darken($teal, 5);
         margin-top: 0;
     }
@@ -24,9 +24,7 @@
     }
 
     &__illustration {
-        background-repeat: no-repeat;
-        background-size: 50%;
-        background-color: #f2f2f2;
-        background-position: left center;
+        width: 90%;
+        margin: 20px;
     }
 }

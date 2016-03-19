@@ -1,0 +1,66 @@
+.modal-window {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  top: 5%;
+  background-color: $white;
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.2);
+
+  &.js-is-active {
+    display: block;
+  }
+
+  @include breakpoint($medium) {
+    width: 60%;
+    left: 20%;
+  }
+
+  @include breakpoint($small) {
+    width: 90%;
+    left: 5%;
+  }
+  
+  &__content {
+    padding: 0 40px;
+    overflow-y: scroll;
+    max-height: 80vh;
+  }
+
+  &__title {
+    font-weight: 400;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: $white;
+    background-color: $teal;
+  }
+  
+  &__footer {
+    padding: 10px 30px;
+    background-color: $teal;
+    color: $white;
+    text-align: center;
+  }
+}
+
+.overlay {
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba($black, .3);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  // pointer-events: none;
+  display: none;
+
+  &.js-is-active { display: block; }
+}
+
+
+// This prevents the interface from scrolling, while the modal window is active. 
+body.overlay--active {
+  height: 100vh;
+  overflow: hidden;
+}
