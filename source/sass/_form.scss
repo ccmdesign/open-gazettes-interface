@@ -16,7 +16,10 @@
       background-color: rgba($dark-blue, .2);
       box-shadow: none;
     }
-  } 
+  }
+
+  &__submit { float: right; }
+  &__cancel { background-color: $red; }
 
   &__textarea {
     border: 0;
@@ -30,6 +33,4 @@
       box-shadow: none;
     }
   }
-
-
 }
