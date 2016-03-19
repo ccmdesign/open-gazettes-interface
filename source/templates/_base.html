@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="vendor/slick.css">
   <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body class="overlay--active">
   {% block header %}
     {{ macros.branded_header(search=true) }} 
   {% endblock %}
@@ -78,5 +78,7 @@
       </div>
     </div>
   </section>
+  <div class="overlay js-overlay"></div>
+  {% block modal %}{% endblock %}
 </body>
 </html>
