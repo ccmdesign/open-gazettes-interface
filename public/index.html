@@ -29,10 +29,19 @@
         <nav class="">
           <a class="top-nav__item" href="./">Home</a>
           <a class="top-nav__item" href="./search.html">Search</a>
-          <a class="top-nav__item" href="./use-cases.html">Use Cases</a>
+          <!-- Adding the "top-nav__item--active" class to indicate which page is active in the main menu -->
+          <a class="top-nav__item top-nav__item--active" href="./use-cases.html">Use Cases</a>
           <a class="top-nav__item" href="./gazette-page.html">Gazette Page</a>
           <a class="top-nav__item" href="./gazette-page-2.html">Gazette Page2</a>
-          <a href="#" class="login material-icons" title="Login">account_circle</a>
+          
+          <div class="dropdown">
+            <a href="#" class="login" title="Login"><i class="material-icons">account_circle</i></a>
+            <ul class="dropdown__list">
+              <li class="dropdown__item"><a href="#">Register</a></li>
+              <li class="dropdown__item"><a href="#">Sign In</a></li>
+              <li class="dropdown__item"><a href="#">Sign Out</a></li>
+            </ul>
+          </div>
           <!-- <a class="top-nav__item disabled" href="#">About</a>
           <a class="top-nav__item disabled" href="#">Contact</a> -->
         </nav>
@@ -302,7 +311,7 @@
 
 
 <div class="column large-6 use-cases__panel">
-  <img class="use-cases__illustration" src="images/use-case-1.jpg" alt="Use Case Name">
+  <img class="use-cases__illustration" src="images/use-case-3.png" alt="Use Case Name">
 
 </div>
 
@@ -338,8 +347,34 @@
 
 
 <div class="column large-6 use-cases__panel">
-  <img class="use-cases__illustration" src="images/use-case-2.jpg" alt="Use Case Name">
+  <img class="use-cases__illustration" src="images/use-case-4.png" alt="Use Case Name">
 
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="slider__item use-cases--left">
+  <div class="page-section">
+    <div class="row">
+
+
+<div class="column large-6 use-cases__panel">
+  <img class="use-cases__illustration" src="images/use-case-5.png" alt="Use Case Name">
+
+</div>
+
+
+<div class="column large-6 use-cases__panel">
+  <h3 class="use-cases__h3">Use Cases</h3>
+  <h2 class="use-cases__h2">Bank Employees</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea quae molestiae corrupti placeat eum numquam blanditiis. Voluptate a dolores quidem saepe adipisci excepturi, non aspernatur recusandae, praesentium voluptas dignissimos quos.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum pariatur fuga quisquam minima distinctio impedit similique dignissimos, sunt itaque. Eaque harum fugit amet? Iste harum error tempora quod dolor, veniam.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum pariatur fuga quisquam minima distinctio impedit similique dignissimos, sunt itaque. Eaque harum fugit amet? Iste harum error tempora quod dolor, veniam.</p>
+  <p><a href="#" class="button--small">About the API <i class="material-icons">arrow_forward</i></a></p>
 </div>
 
 

@@ -340,6 +340,8 @@ a:hover {
     color: rgba(255, 255, 255, 0.8); }
     .top-nav__item:visited {
       color: rgba(255, 255, 255, 0.8); }
+  .top-nav__item--active {
+    background-color: #145c67; }
   .top-nav__open-corporates {
     color: rgba(255, 255, 255, 0.4);
     padding: 15px 0;
@@ -352,22 +354,52 @@ a:hover {
 .login:visited {
   font-size: 1.8rem;
   width: 50px;
-  height: 40px;
-  vertical-align: middle;
-  margin: 5px 0 0; }
-  @media (min-width: 70em) {
-    .login,
-    .login:visited {
-      position: absolute;
-      margin: 0;
-      right: 20px;
-      top: 15px; } }
+  padding: 13px;
+  text-align: center; }
 
 .top-nav .login {
   color: rgba(255, 255, 255, 0.3); }
 
 .top-nav .login:hover {
   color: white; }
+
+.dropdown {
+  vertical-align: middle;
+  margin: 0; }
+  .dropdown:hover {
+    background-color: #145c67; }
+    .dropdown:hover .login {
+      color: white; }
+    .dropdown:hover .dropdown__list {
+      display: block; }
+  @media (min-width: 70em) {
+    .dropdown {
+      position: absolute;
+      margin: 0;
+      right: 20px;
+      top: 0; } }
+  .dropdown__list {
+    display: none; }
+    @media (min-width: 70em) {
+      .dropdown__list {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        text-align: right;
+        min-width: 140px;
+        background-color: #186f7c;
+        right: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); } }
+  .dropdown__item {
+    list-style-type: none;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(24, 111, 124, 0.2); }
+    .dropdown__item:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      cursor: pointer; }
+      .dropdown__item:hover a {
+        color: white; }
 
 .form {
   padding: 30px 0; }
