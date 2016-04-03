@@ -32,17 +32,64 @@
     @extend .u-material-icons;
     font-size: 1.8rem;
     width: 50px;
-    height: 40px;
+    padding: 13px;
+    text-align: center;
+}
+
+.top-nav .login { color: rgba($white, .3);}
+.top-nav .login:hover { color: rgba($white, 1);}
+
+
+.dropdown {
     vertical-align: middle;
-    margin: 5px 0 0;
+    margin: 0;
+
+    &:hover {
+        background-color: darken($teal, 5);
+
+        .login { color: white; }
+
+        .dropdown__list { display: block; } // Triggers the dropdown for the login.
+
+          
+    }
 
     @include breakpoint(70em) {
         position: absolute;
         margin: 0;
         right: 20px;
-        top: 15px;
+        top: 0;
     }
+
+    &__list {
+        display: none; // Hides the dropdown, when not hovered.
+        @include breakpoint(70em) {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            text-align: right;
+            min-width: 140px;
+            background-color: $teal;
+            right: 0;
+            box-shadow: 0 0 10px rgba($black, .3);
+        }
+        
+    }
+
+    &__item {
+        list-style-type: none;
+        padding: 10px;
+        background-color: rgba($white, .8);
+        border-bottom: 1px solid rgba($teal, .2);
+
+        &:hover {
+            background-color: rgba($white, .3);
+            cursor: pointer;
+
+            a { color: white; }
+
+        }
+    }
+
 }
 
-.top-nav .login { color: rgba($white, .3);}
-.top-nav .login:hover { color: rgba($white, 1);}
