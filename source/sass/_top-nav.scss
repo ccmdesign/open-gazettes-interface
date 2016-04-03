@@ -11,6 +11,10 @@
         }
     }
 
+    &__item--active {
+        background-color: darken($teal, 5);
+    }
+
     &__open-corporates {
         color: rgba($white, .4);
         padding: 15px 0;
@@ -39,8 +43,6 @@
         top: 15px;
     }
 }
-
-
 
 .top-nav .login { color: rgba($white, .3);}
 .top-nav .login:hover { color: rgba($white, 1);}
