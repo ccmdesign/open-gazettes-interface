@@ -44,12 +44,16 @@
     background-color: rgba($black, .85);
     font-size: .9rem;
     color: rgba($white, .5);
+
+    @include breakpoint($small) { padding: 10px 20px; }
 }
 
 .copyright-information__open-corporates {
     color: rgba($white, .4);
     padding: 15px 0;
     text-align: right;
+
+    @include breakpoint($small) { padding: 10px 20px; }
 
     img {
         width: 130px;
