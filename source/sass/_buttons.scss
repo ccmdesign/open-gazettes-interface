@@ -8,12 +8,13 @@
     font-size: 1.7rem;
     font-weight: 600;
 
-    &:hover {
-        background-color: darken($orange, 5);
-    }
+    &:hover { background-color: darken($orange, 5); }
 
-    &:visited { 
-        color: rgba($white, .8); 
+    &:visited { color: rgba($white, .8); }
+
+    @include breakpoint($small) {
+        width: 100%;
+        padding: 10px;
     }
 }
 
@@ -21,9 +22,7 @@
     padding: 5px 50px;
     background-color: rgba($dark-blue, .2);
 
-    &:hover {
-        background-color: $dark-blue;        
-    }
+    &:hover { background-color: $dark-blue; }
 }
 
 .button--small {
@@ -38,13 +37,8 @@
         font-size: 1.3rem;
     }
 
-    &:hover {
-        background-color: darken($teal, 5);
-    }
-
-    &:visited { 
-        color: rgba($white, .8); 
-    }
+    &:hover { background-color: darken($teal, 5); }
+    &:visited { color: rgba($white, .8); }
 }
 
 .button--naked {

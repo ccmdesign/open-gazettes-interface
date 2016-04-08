@@ -5,11 +5,20 @@
     color: $white;
     font-size: 1rem;
 
+    @include breakpoint($small) { padding: 20px; }
+
     p {
         margin: 0;
     }
 
     .call-to-action-section__button {
         text-align: right;
+
+        @include breakpoint($small) { 
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
     }
 }
