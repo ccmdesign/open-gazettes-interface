@@ -2,18 +2,54 @@
 .top-nav {
     background-color: $teal;
 
+    &__mobile-trigger {
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        color: $white;
+        display: none;
+
+        @include breakpoint($small) { display: block; }
+    }
+
+    &__container {
+        @include breakpoint($small) {
+            width: 80vw;
+            background-color: $white;
+            box-shadow: 0 0 5px rgba($black, .2);
+            position: absolute;
+            left: -100%;
+            top: 0;
+            bottom: 0;
+            z-index: 1001;
+            transition: left .3s ease;
+        }
+
+        &.js-is-active {
+            @include breakpoint($small) { 
+                left: 0; 
+                transition: left .3s ease;
+            }
+        }
+    }
+
     &__item {
         @extend .u-button;
         color: rgba($white, .8);
 
-        &:visited {
-            color: rgba($white, .8);
+        &:visited { color: rgba($white, .8); 
+        }
+
+        @include breakpoint($small) {
+            display: block;
+            // This styles are tied to the amount of menu item
+            height: 20%;
+            font-size: 1.5rem;
+            padding: 15% 20px;
         }
     }
 
-    &__item--active {
-        background-color: darken($teal, 5);
-    }
+    &__item--active { background-color: darken($teal, 5); }
 
     &__open-corporates {
         color: rgba($white, .4);

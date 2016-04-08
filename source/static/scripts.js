@@ -39,6 +39,8 @@ $(document).ready(function() {
     ]
   });
 
+
+
   // Modal Window Logic
   // This can be better written, abstracted, etc.
 
@@ -54,10 +56,30 @@ $(document).ready(function() {
     $('body').removeClass('overlay--active');
   });
 
-  $('.js-overlay').click(function(){
-    $('.js-modal-window').removeClass('js-is-active');
+  // Top Nav Logic - For mobile only
+  // This can be better written, abstracted, etc.
+
+  $('.js-top-nav-open').click(function(){
+    $('.js-top-nav').addClass('js-is-active');
+    $('.js-overlay').addClass('js-is-active');
+    $('body').addClass('overlay--active');
+  });
+
+  $('.js-top-nav-close').click(function(){
+    $('.js-top-nav').removeClass('js-is-active');
     $('.js-overlay').removeClass('js-is-active');
     $('body').removeClass('overlay--active');
   });
+
+  
+  // Overlay Logic to disable all active states
+
+  $('.js-overlay').click(function(){
+    $('.js-modal-window').removeClass('js-is-active');
+    $('.js-top-nav').removeClass('js-is-active');
+    $('.js-overlay').removeClass('js-is-active');
+    $('body').removeClass('overlay--active');
+  });
+
 
 });
