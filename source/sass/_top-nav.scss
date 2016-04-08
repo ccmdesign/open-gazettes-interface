@@ -60,6 +60,9 @@
             width: 130px;
             margin-left: 5px;
         }
+
+        // Hides the Open Corporates logo from the top menu in mobile screens
+        @include breakpoint($small) { display: none; }
     }
 }
 
