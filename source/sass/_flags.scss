@@ -12,6 +12,11 @@
     width: 15%;
     cursor: pointer;
 
+    @include breakpoint($small) {
+        width: 30%;
+        margin-bottom: 15px;
+    }
+
     &__rounded {
         @extend .u-circle;
         width: 60px;
