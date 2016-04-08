@@ -2,12 +2,12 @@
 .page-section {
     padding: 20px 0 40px;
 
-    @include breakpoint($small) { padding: 20px 20px 40px; }
-
     &__centered-content {
         max-width: 660px;
         margin: 0 auto;
         text-align: center;
+
+        @include breakpoint($small) { padding: 0 20px; }
     }
 
     &__h1 {

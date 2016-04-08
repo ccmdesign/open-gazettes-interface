@@ -15,6 +15,11 @@
     display: block;
     text-decoration: none;
 
+    @include breakpoint($small) {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
     h2 {
         font-size: 1.3rem;
         font-weight: 400;

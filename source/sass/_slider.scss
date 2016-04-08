@@ -27,7 +27,6 @@
         &:hover:after {
             color: rgba($white, .8);
             background-color: $teal;
-            
             transition: all 0.3s ease;
         }
     }
@@ -37,7 +36,6 @@
         outline: 0;
 
         &:before {
-            
             content: 'keyboard_arrow_left'
         }
     }
