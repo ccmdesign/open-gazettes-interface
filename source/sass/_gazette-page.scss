@@ -53,6 +53,12 @@
         list-style-type: none;
         margin-bottom: 10px;
         display: inline-block;
+        
+        @include breakpoint($small) {
+            display: block;
+            text-align: center;
+            margin-bottom: 5px;
+        }
     }
 
     &__item {
