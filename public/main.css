@@ -561,6 +561,7 @@ body.overlay--active {
   list-style-type: none;
   display: inline-block;
   width: 15%;
+  vertical-align: top;
   cursor: pointer; }
   @media (max-width: 640px) {
     .flag-item {
