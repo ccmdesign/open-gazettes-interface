@@ -212,16 +212,16 @@ a:hover {
   background-color: #186f7c;
   padding: 40px 0;
   color: white;
-  font-size: 1rem; }
+  font-size: 1.2rem; }
   @media (max-width: 640px) {
     .call-to-action-section {
       padding: 20px; } }
   .call-to-action-section p {
-    margin: 0; }
-  .call-to-action-section .call-to-action-section__button {
+    margin: 5px 0; }
+  .call-to-action-section__button {
     text-align: right; }
     @media (max-width: 640px) {
-      .call-to-action-section .call-to-action-section__button {
+      .call-to-action-section__button {
         text-align: center;
         margin-top: 20px; } }
 
@@ -751,6 +751,27 @@ body.overlay--active {
       color: orange; }
     .alert-message--warning .alert-message__icon:after {
       content: '\E002'; }
+
+.all-use-cases__container {
+  text-align: center;
+  margin: 30px 0; }
+
+.all-use-cases__item {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+  margin: 0 -5px -77px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+  .all-use-cases__item:hover {
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none; }
+  .all-use-cases__item > img {
+    max-width: 250px; }
+
+.all-use-cases--bottom-row {
+  margin-bottom: 0; }
 
 .all-use-cases__explanation {
   text-align: center; }
