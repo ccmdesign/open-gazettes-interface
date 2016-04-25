@@ -1,6 +1,32 @@
 // Use Cases
-.all-use-cases__explanation {
-    text-align: center;
+.all-use-cases {
+    &__container {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    &__item {
+        display: inline-block;
+        width: auto;
+        padding: 0;
+        margin: 0 -5px -77px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+            
+        &:hover { 
+            opacity: 1;
+            -webkit-filter: none;
+            filter: none;
+        }
+
+        > img { max-width: 250px; }
+      
+    }
+
+    &--bottom-row { margin-bottom: 0; }
+
+    &__explanation { text-align: center; }
 }
 
 .use-cases {

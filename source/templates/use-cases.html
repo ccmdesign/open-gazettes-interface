@@ -4,7 +4,13 @@
 <div class="page-section all-use-cases">
   <div class="row">
     <div class="large-10 large-centered">
-      <img src="images/use-cases-all.jpg" alt="">
+      <div class="all-use-cases__container">
+        <a href="#use-case-bank" class="all-use-cases__item"><img src="./images/use-case-bank.png" alt="Bank Use Case" title="Bank Use Case"></a>
+        <a href="#use-case-company" class="all-use-cases__item"><img src="./images/use-case-company.png" alt="Company Use Case" title="Company Use Case"></a>
+        <a href="#use-case-journalist" class="all-use-cases__item"><img src="./images/use-case-journalist.png" alt="Journalist Use Case" title="Journalist Use Case"></a>
+        <a href="#use-case-open-data" class="all-use-cases__item all-use-cases--bottom-row"><img src="./images/use-case-open-data.png" alt="Open Data Use Case" title="Open Data Use Case"></a>
+        <a href="#use-case-think-tank" class="all-use-cases__item all-use-cases--bottom-row"><img src="./images/use-case-think-tank.png" alt="Think Tank Data Use Case" title="Think Tank Data Use Case"></a>
+      </div>
       <div class="all-use-cases__explanation">
         <h2 class="use-cases__h2">Use Case - Bank Employee</h2>
         <p>We will have some quick explanation about each use case in this menu. The hive-like thing above will be the use-case navigation menu. Beatae dignissimos earum molestias dolore. Dolore ullam, omnis blanditiis id veritatis iste.</p>
@@ -16,10 +22,10 @@
 {% set side = cycler('left', 'right') %}
 
 
-{{ macros.use_cases(side.next(), 'use-case-3.png') }}
-{{ macros.use_cases(side.next(), 'use-case-3.png') }}
-{{ macros.use_cases(side.next(), 'use-case-3.png') }}
-{{ macros.use_cases(side.next(), 'use-case-3.png') }}
-{{ macros.use_cases(side.next(), 'use-case-3.png') }}
+{{ macros.use_cases(side.next(), 'use-case-bank.png') }}
+{{ macros.use_cases(side.next(), 'use-case-company.png') }}
+{{ macros.use_cases(side.next(), 'use-case-journalist.png') }}
+{{ macros.use_cases(side.next(), 'use-case-open-data.png') }}
+{{ macros.use_cases(side.next(), 'use-case-think-tank.png') }}
 
 {% endblock %}

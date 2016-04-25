@@ -49,7 +49,8 @@
 {% endmacro %}
 
 {% macro use_case(side, image) %}
-<div class="slider__item use-cases--{{ side }}">
+{# Hacky solution for adding the correct ids to the macro #}
+<div id="{{image | replace(".png", "")}}" class="slider__item use-cases--{{ side }}">
   <div class="page-section">
     <div class="row">
 {% if side == 'left' %}
