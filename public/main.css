@@ -634,7 +634,7 @@ body.overlay--active {
     bottom: 0;
     width: 100%; }
   .gazette-box__category {
-    margin: 5px 5px 5px 20px;
+    margin: 5px 0 5px 20px;
     display: inline-block;
     padding: 2px 8px 1px;
     background-color: #b80000;
@@ -645,7 +645,7 @@ body.overlay--active {
     text-transform: uppercase; }
   .gazette-box__pub-date {
     float: right;
-    margin: 5px 5px 5px 20px;
+    margin: 5px 5px 5px 0;
     font-style: italic;
     color: rgba(33, 60, 79, 0.4); }
   .gazette-box__flag {

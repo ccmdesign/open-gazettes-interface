@@ -47,7 +47,7 @@
     }
 
     &__category { // NOTE: This might be redundant with the gazette-category
-        margin: 5px 5px 5px 20px;
+        margin: 5px 0 5px 20px;
         display: inline-block;
         padding: 2px 8px 1px;
         background-color: $red;
@@ -60,7 +60,7 @@
 
     &__pub-date {
         float: right;
-        margin: 5px 5px 5px 20px;
+        margin: 5px 5px 5px 0;
         font-style: italic;
         color: rgba($dark-blue, .4);
     }
