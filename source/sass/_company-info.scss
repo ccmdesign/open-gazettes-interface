@@ -76,10 +76,12 @@
     border-top: 4px solid $red;
     border-bottom: 4px solid $red;
     background-color: rgba($black, .05);
-    
+
     > * {
         padding-left: 20px;
         padding-right: 20px;
+        text-overflow: ellipsis;
+        overflow-x: hidden;
     }
 
     strong { font-weight: 400; }

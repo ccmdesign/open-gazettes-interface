@@ -76,12 +76,12 @@
 
     &--negative {
         background-color: rgba($white, .1);
-        
+
         h2, p { color: rgba($white, .8); }
 
         &:visited { color: $white; }
 
-        .gazette-box__controls { 
+        .gazette-box__controls {
             background-color: rgba($white, .1);
         }
 

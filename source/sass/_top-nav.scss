@@ -6,7 +6,7 @@
         position: absolute;
         top: 10px;
         left: 15px;
-        color: $white;
+        color: $teal;
         display: none;
 
         @include breakpoint($small) { display: block; }
@@ -23,6 +23,7 @@
             bottom: 0;
             z-index: 1001;
             transition: left .3s ease;
+            overflow-y: auto;
         }
 
         &.js-is-active {
@@ -94,6 +95,8 @@
 
 
     }
+
+    @include breakpoint($small) { display: none }
 
     @include breakpoint($medium) {
         position: absolute;

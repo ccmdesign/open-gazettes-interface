@@ -27,16 +27,14 @@
 {% macro gazette_box(code, title='Lorem ipsum dolor sit amet, consectetur adipisicing elit dolor sit amet sit amet amet.', text='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur recusandae molestiae, harum nisi, soluta illum harum nisi, soluta illum. Tenetur, doloribus vel iste nostrum. Fuga dolore, veniam, nulla dignissimos nesciunt sit?', classification='Dissolution', visited=false, dark=false, end=false) %}
 <div class="medium-6 column{% if end %} end{% endif %}">
   <a href="{% if visited %}https://www.facebook.com{% else %}#{% endif %}" class="gazette-box{% if dark %} gazette-box--negative{% endif %}">
-{% if title %}
     <h2>{{ title }}</h2>
-{% endif %}
     <p>{{ text }}</p>
     <div class="gazette-box__controls">
+      <img class="gazette-box__flag" src="{{ image_path(code + '-flag.svg') }}" alt="">
+      <span class="gazette-box__pub-date">2 days ago</span>
 {% if classification %}
       <div class="gazette-box__category">{{ classification }}</div>
 {% endif %}
-      <img class="gazette-box__flag" src="{{ image_path(code + '-flag.svg') }}" alt="">
-      <span class="gazette-box__pub-date">2 days ago</span>
     </div>
   </a>
 </div>

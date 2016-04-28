@@ -71,7 +71,7 @@ $(document).ready(function() {
     $('body').removeClass('overlay--active');
   });
 
-  
+
   // Overlay Logic to disable all active states
 
   $('.js-overlay').click(function(){
