@@ -44,7 +44,7 @@
         @include breakpoint($small) {
             display: block;
             // This styles are tied to the amount of menu item
-            height: 20%;
+            line-height: 1;
             font-size: 1.5rem;
             padding: 15% 20px;
         }
@@ -81,7 +81,6 @@
 .top-nav .login { color: rgba($white, .3);}
 .top-nav .login:hover { color: rgba($white, 1);}
 
-
 .dropdown {
     vertical-align: middle;
     margin: 0;
@@ -92,11 +91,15 @@
         .login { color: white; }
 
         .dropdown__list { display: block; } // Triggers the dropdown for the login.
-
-
     }
 
-    @include breakpoint($small) { display: none }
+    @include breakpoint($small) {
+        background-color: $teal;
+
+        .login {
+            display: none;
+        }
+    }
 
     @include breakpoint($medium) {
         position: absolute;
@@ -106,10 +109,11 @@
     }
 
     &__list {
-        display: none; // Hides the dropdown, when not hovered.
+        margin: 0;
+        padding: 0;
+
         @include breakpoint($medium) {
-            padding: 0;
-            margin: 0;
+            display: none; // Hides the dropdown, when not hovered.
             position: absolute;
             text-align: right;
             min-width: 140px;
@@ -117,7 +121,6 @@
             right: 0;
             box-shadow: 0 0 10px rgba($black, .3);
         }
-
     }
 
     &__item {
@@ -131,9 +134,12 @@
             cursor: pointer;
 
             a { color: white; }
+        }
 
+        @include breakpoint($small) {
+            padding: 20px;
+            border-bottom: 0;
         }
     }
-
 }
 

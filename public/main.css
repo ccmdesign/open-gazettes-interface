@@ -393,7 +393,7 @@ a:hover {
     @media (max-width: 640px) {
       .top-nav__item {
         display: block;
-        height: 20%;
+        line-height: 1;
         font-size: 1.5rem;
         padding: 15% 20px; } }
   .top-nav__item--active {
@@ -436,7 +436,9 @@ a:hover {
       display: block; }
   @media (max-width: 640px) {
     .dropdown {
-      display: none; } }
+      background-color: #186f7c; }
+      .dropdown .login {
+        display: none; } }
   @media (min-width: 40em) {
     .dropdown {
       position: absolute;
@@ -444,11 +446,11 @@ a:hover {
       right: 20px;
       top: 0; } }
   .dropdown__list {
-    display: none; }
+    margin: 0;
+    padding: 0; }
     @media (min-width: 40em) {
       .dropdown__list {
-        padding: 0;
-        margin: 0;
+        display: none;
         position: absolute;
         text-align: right;
         min-width: 140px;
@@ -465,6 +467,10 @@ a:hover {
       cursor: pointer; }
       .dropdown__item:hover a {
         color: white; }
+    @media (max-width: 640px) {
+      .dropdown__item {
+        padding: 20px;
+        border-bottom: 0; } }
 
 .form {
   padding: 30px 0; }
