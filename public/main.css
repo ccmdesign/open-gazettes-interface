@@ -397,11 +397,14 @@ a:hover {
     background-color: #145c67; }
   .top-nav__open-corporates {
     color: rgba(255, 255, 255, 0.4);
-    padding: 15px 0;
+    padding: 15px 20px 15px 0;
     text-align: right; }
     .top-nav__open-corporates img {
       width: 130px;
       margin-left: 5px; }
+    @media (min-width: 64em) {
+      .top-nav__open-corporates {
+        padding-right: 45px; } }
     @media (max-width: 640px) {
       .top-nav__open-corporates {
         display: none; } }
@@ -428,7 +431,7 @@ a:hover {
       color: white; }
     .dropdown:hover .dropdown__list {
       display: block; }
-  @media (min-width: 70em) {
+  @media (min-width: 40em) {
     .dropdown {
       position: absolute;
       margin: 0;
@@ -436,7 +439,7 @@ a:hover {
       top: 0; } }
   .dropdown__list {
     display: none; }
-    @media (min-width: 70em) {
+    @media (min-width: 40em) {
       .dropdown__list {
         padding: 0;
         margin: 0;
