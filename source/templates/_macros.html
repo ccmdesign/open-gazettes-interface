@@ -30,11 +30,11 @@
     <h2>{{ title }}</h2>
     <p>{{ text }}</p>
     <div class="gazette-box__controls">
+      <img class="gazette-box__flag" src="{{ image_path(code + '-flag.svg') }}" alt="">
+      <span class="gazette-box__pub-date">2 days ago</span>
 {% if classification %}
       <div class="gazette-box__category">{{ classification }}</div>
 {% endif %}
-      <img class="gazette-box__flag" src="{{ image_path(code + '-flag.svg') }}" alt="">
-      <span class="gazette-box__pub-date">2 days ago</span>
     </div>
   </a>
 </div>

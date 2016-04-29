@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="images/favicon.png" rel="icon" type="image/png">
   <script src="vendor/modernizr.js"></script>
-  
+
   <!-- Having the full JQuery might be overkill.  -->
   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="vendor/slick.min.js"></script>
@@ -21,20 +21,13 @@
 </head>
 <body>
   {% block header %}
-    {{ macros.branded_header(search=true) }} 
+    {{ macros.branded_header(search=true) }}
   {% endblock %}
   <section class="top-nav">
     <div class="row">
       <div class="large-8 column">
         <span class="top-nav__mobile-trigger js-top-nav-open"><i class="material-icons">menu</i></span>
         <nav class="top-nav__container js-top-nav">
-          <a class="top-nav__item" href="./">Home</a>
-          <a class="top-nav__item" href="./search.html">Search</a>
-          <!-- Adding the "top-nav__item--active" class to indicate which page is active in the main menu -->
-          <a class="top-nav__item top-nav__item--active" href="./use-cases.html">Use Cases</a>
-          <a class="top-nav__item" href="./gazette-page.html">Gazette Page</a>
-          <a class="top-nav__item" href="./gazette-page-2.html">Gazette Page2</a>
-          
           <div class="dropdown">
             <a href="#" class="login" title="Login"><i class="material-icons">account_circle</i></a>
             <ul class="dropdown__list">
@@ -43,6 +36,13 @@
               <li class="dropdown__item"><a href="#">Sign Out</a></li>
             </ul>
           </div>
+
+          <a class="top-nav__item" href="./">Home</a>
+          <a class="top-nav__item" href="./search.html">Search</a>
+          <!-- Adding the "top-nav__item--active" class to indicate which page is active in the main menu -->
+          <a class="top-nav__item top-nav__item--active" href="./use-cases.html">Use Cases</a>
+          <a class="top-nav__item" href="./gazette-page.html">Gazette Page</a>
+          <a class="top-nav__item" href="./gazette-page-2.html">Gazette Page2</a>
           <!-- <a class="top-nav__item disabled" href="#">About</a>
           <a class="top-nav__item disabled" href="#">Contact</a> -->
         </nav>
@@ -57,7 +57,7 @@
 
     </div>
   </section>
-  
+
   {{ macros.alert_message('success') }}
 
 {% block main %}{% endblock %}

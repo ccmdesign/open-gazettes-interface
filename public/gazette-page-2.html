@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="images/favicon.png" rel="icon" type="image/png">
   <script src="vendor/modernizr.js"></script>
-  
+
   <!-- Having the full JQuery might be overkill.  -->
   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="vendor/slick.min.js"></script>
@@ -37,20 +37,13 @@
     </div>
   </div>
 </section>
- 
+
   
   <section class="top-nav">
     <div class="row">
       <div class="large-8 column">
         <span class="top-nav__mobile-trigger js-top-nav-open"><i class="material-icons">menu</i></span>
         <nav class="top-nav__container js-top-nav">
-          <a class="top-nav__item" href="./">Home</a>
-          <a class="top-nav__item" href="./search.html">Search</a>
-          <!-- Adding the "top-nav__item--active" class to indicate which page is active in the main menu -->
-          <a class="top-nav__item top-nav__item--active" href="./use-cases.html">Use Cases</a>
-          <a class="top-nav__item" href="./gazette-page.html">Gazette Page</a>
-          <a class="top-nav__item" href="./gazette-page-2.html">Gazette Page2</a>
-          
           <div class="dropdown">
             <a href="#" class="login" title="Login"><i class="material-icons">account_circle</i></a>
             <ul class="dropdown__list">
@@ -59,6 +52,13 @@
               <li class="dropdown__item"><a href="#">Sign Out</a></li>
             </ul>
           </div>
+
+          <a class="top-nav__item" href="./">Home</a>
+          <a class="top-nav__item" href="./search.html">Search</a>
+          <!-- Adding the "top-nav__item--active" class to indicate which page is active in the main menu -->
+          <a class="top-nav__item top-nav__item--active" href="./use-cases.html">Use Cases</a>
+          <a class="top-nav__item" href="./gazette-page.html">Gazette Page</a>
+          <a class="top-nav__item" href="./gazette-page-2.html">Gazette Page2</a>
           <!-- <a class="top-nav__item disabled" href="#">About</a>
           <a class="top-nav__item disabled" href="#">Contact</a> -->
         </nav>
@@ -73,7 +73,7 @@
 
     </div>
   </section>
-  
+
   
 
 <section class="alert-message alert-message--success">
@@ -301,5 +301,33 @@
   </section>
   <div class="overlay js-overlay"></div>
   
+<div class="modal-window js-modal-window">
+  <h1 class="modal-window__title">Suggest this Gazette to be private</h1>
+  <div class="modal-window__content">
+    <div class="row">
+      <div class="small-12">
+        <form action="" class="form">
+          <label class="form__label" for="">Name</label>
+          <input class="form__input" type="text" name="" id="">
+          <label class="form__label" for="">Email</label>
+          <input class="form__input" type="email" name="" id="">
+          <label class="form__label" for="">Name</label>
+          <input class="form__input" type="text" name="" id="">
+          <label class="form__label" for="">Email</label>
+          <input class="form__input" type="email" name="" id="">
+          <label class="form__label" for="">Message</label>
+          <textarea name="" id="" class="form__textarea"></textarea>
+          <textarea name="" id="" class="form__textarea"></textarea>
+          <input type="submit" class="button form__submit js-modal-window-close" value="Send">
+          <input type="submit" class="button form__cancel js-modal-window-close" value="Cancel">
+        </form>  
+      </div>
+    </div>
+  </div>
+  <!-- <div class="modal-window__footer">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa aspernatur, suscipit praesentium ad minus, aliquid quam molestias rem porro nemo excepturi neque ut sint necessitatibus, sed, adipisci qui? Rerum, fugit.</p>
+  </div> -->
+</div>
+
 </body>
 </html>

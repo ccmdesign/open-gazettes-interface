@@ -38,4 +38,8 @@
             top: 15px;
         }
     }
+
+    & + .top-nav .top-nav__mobile-trigger {
+        color: $white;
+    }
 }
