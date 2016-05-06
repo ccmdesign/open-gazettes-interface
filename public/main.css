@@ -347,6 +347,8 @@ a:hover {
     margin: 0 auto 0 10px;
     display: inline-block;
     width: 80%; }
+    .branded-header__search input[type="search"] {
+      margin-right: -4px; }
   .branded-header__login, .branded-header__login:visited {
     color: rgba(255, 255, 255, 0.3);
     font-size: 1.8rem;
@@ -575,7 +577,7 @@ body.overlay--active {
 .flag-item {
   list-style-type: none;
   display: inline-block;
-  width: 15%;
+  width: 13%;
   vertical-align: top;
   cursor: pointer; }
   @media (max-width: 640px) {

@@ -23,6 +23,9 @@
         width: 80%;
         @extend .u-search-field;
 
+        input[type="search"] {
+            margin-right: -4px;
+        }
     }
 
     &__login,
